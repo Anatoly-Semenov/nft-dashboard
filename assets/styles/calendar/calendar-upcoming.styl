@@ -1,0 +1,48 @@
+.calendar__upcoming
+	display flex
+	flex-direction column
+	max-width 417px
+	width 100%
+	border-radius $border-radius
+	border $border
+
+	&-header
+		height 56px
+		width 100%
+		padding $gap
+		background-color $color-background-secondary
+		border-bottom $border
+		border-top-left-radius $border-radius
+		border-top-right-radius $border-radius
+
+	&-title
+		font-size 20px
+
+	&-games
+		display flex
+		flex-direction column
+
+	&-game
+		display flex
+		justify-content space-between
+		align-items center
+		width 100%
+		padding $gap
+
+		&:not(:last-child)
+			border-bottom $border
+
+	&-year
+		font-size 18px
+		font-weight $bold
+
+	& .ui-statistic
+		max-width 60px
+
+	& .ui-delta
+		color $color-text-third
+		font-size 14px
+		margin-top 4px
+
+		& svg
+			display none

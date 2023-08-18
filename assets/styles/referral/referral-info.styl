@@ -1,0 +1,67 @@
+.referral__info
+	display flex
+	flex-direction column
+	padding 20px $gap-big
+	border-radius $border-radius-big
+	border $border
+	margin-top $gap-big
+	width 100%
+
+	&-row, &-col, &-list
+		display flex
+		justify-content flex-start
+		align-items flex-start
+
+	&-col, &-list
+		flex-direction column
+		width 100%
+
+	&-row
+		justify-content space-between
+
+		&:not(:first-child)
+			margin-top $gap
+			padding-top $gap
+			border-top $border
+
+	&-col
+		max-width 760px
+
+		&._short
+			width fit-content
+			margin-right 60px
+
+	&-title
+		display flex
+		align-items center
+		color $color-text
+		font-size 20px
+		font-weight $bold
+
+		&._hide
+			opacity 0
+
+		& svg
+			margin-right $gap-small
+			height 20px
+			min-width 20px
+			max-width 20px
+
+	&-list
+		margin-top $gap-small
+		padding-left 20px
+
+		&._big
+			padding-left 31px
+
+	&-item
+		font-size 14px
+		position relative
+
+		&:not(:first-child)
+			margin-top $gap-small
+
+		& svg
+			position absolute
+			left -20px
+			top 1px

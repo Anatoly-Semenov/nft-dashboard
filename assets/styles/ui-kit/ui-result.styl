@@ -1,0 +1,50 @@
+.ui-result
+	flex-center()
+	flex-direction column
+	background-color $color-background-secondary
+	padding $gap
+
+	&__title, &__description
+		text-align center
+
+	&__title
+		font-size 28px
+		font-weight $bold
+		margin-top $gap-big
+		color $color-text
+
+	&__description
+		font-size 16px
+		color $color-text-third
+		margin-top $gap
+
+	&__icon, &__icon svg
+		width 64px
+		height 64px
+
+	&__slot
+		margin-top $gap-big
+		width 100%
+
+	&._s
+		max-width 340px
+		min-height 110px
+
+	&._m
+		max-width 400px
+		min-height 140px
+
+	&._l
+		max-width 100%
+		width 100%
+		min-height 114px
+
+	&._s &__text
+		font-size 14px
+
+	&._s &__icon
+		width 30px
+		height 25px
+
+	&._error &__icon path
+		fill $color-error

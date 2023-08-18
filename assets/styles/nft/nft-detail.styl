@@ -1,0 +1,98 @@
+.nft-detail
+	&, &__data, &__data-container &__info-item
+		display flex
+		flex-direction column
+		justify-content flex-start
+		align-items flex-start
+
+	&__container
+		width 100%
+		display flex
+		margin-top $gap-big
+
+	&__img
+		display flex
+		justify-content center
+		align-items flex-start
+		min-height 275px
+		height fit-content
+		width 100%
+		max-width 350px
+
+		& img
+			width 100%
+
+	&__data
+		width 100%
+
+		&-container
+			width 600px
+
+		& .nft-faq
+			margin-bottom 60px
+
+	&__title
+		font-size 30px
+		font-weight $bold
+
+	&__date
+		font-size 12px
+		color $color-ui
+		margin-top 5px
+
+	&__subtitle
+		margin-top $gap-big
+		font-size 18px
+		color $color-text
+
+	&__description
+		font-size 14px
+		color $color-text-third
+		margin-top 4px
+
+	&__info
+		display flex
+		align-items center
+		margin-top $gap-big
+
+		&-item:not(:first-child)
+			margin-left 60px
+
+		&-title
+			font-size 18px
+			color $color-ui
+
+		&-value
+			font-size 20px
+			color $color-text
+			margin-top 4px
+
+	&._loading &__title, &._loading &__date, &._loading &__subtitle, &._loading &__description, &._loading &__img, &._loading &__info-item
+		loading()
+
+	&._loading &__img
+		margin-right $gap-big
+
+	&._loading &__title
+		width 200px
+
+	&._loading &__date
+		width 65px
+		height 20px
+
+	&._loading &__subtitle
+		width 120px
+
+	&._loading &__description
+		height 65px
+
+	&._loading &__info-item
+		width 100px
+
+	&._loading &__info-title, &._loading &__info-value
+		color transparent
+
+	&._loading .nft__connect
+		opacity .7
+		pointer-events none
+		user-select none

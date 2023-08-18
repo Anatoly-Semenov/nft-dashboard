@@ -1,0 +1,102 @@
+.profile__referral
+	display flex
+	flex-direction column
+	align-items flex-start
+	justify-content flex-start
+	max-width 650px
+
+	&-title
+		font-size 18px
+		font-weight $bold
+		line-height $line-height
+		color $color-text
+
+	&-description
+		font-size 14px
+		line-height 20px
+		margin-top $gap-extra-small
+		color $color-text-third
+		max-width 220px
+
+		& a
+			color $color-text
+			text-decoration underline
+			transition color $transition
+
+			&:hover
+				color $color-ui
+
+	&-totals
+		margin-top $gap
+
+	&-totals, &-total
+		display flex
+		justify-content flex-start
+		align-items flex-start
+		width 100%
+
+	&-total
+		flex-direction column
+
+		&:not(:first-child)
+			margin-left $gap-small
+
+	&-subtitle
+		font-size 14px
+		color $color-text
+		font-weight $bold
+
+	&-row
+		display flex
+		justify-content flex-start
+		align-items center
+		margin-top $gap-small
+
+		& svg
+			height 24px
+			width 24px
+
+	&-value, &-slug
+		font-size 16px
+
+	&-value
+		margin-left $gap-small
+		color $color-text
+
+	&-slug
+		color $color-text-disabled
+		margin-left $gap-extra-small
+
+	&-main
+		width 100%
+		display flex
+		margin-top $gap
+
+	&-link
+		display flex
+		align-items center
+		justify-content flex-start
+		height 40px
+		width 100%
+		border $border
+		font-size 16px
+		text-align left
+		padding 0 12px
+
+	&-button
+		flex-center()
+		height 40px
+		min-width 40px
+		max-width 40px
+		background-color $color-highlight
+		transition background-color $transition
+		margin-left $gap-small
+
+		&:hover
+			background-color $color-highlight-hover
+
+		&:active
+			background-color $color-highlight-active
+
+	&._loading &-row
+		loading()

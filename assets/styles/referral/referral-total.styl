@@ -1,0 +1,85 @@
+.referral__total
+	display flex
+	width 100%
+	background-color $color-background-secondary
+	padding $gap $gap-big
+	margin-top $gap-big
+
+	&-list
+		display flex
+		flex-wrap wrap
+		row-gap $gap
+		column-gap $gap
+
+	&-item
+		display flex
+		flex-direction column
+		justify-content flex-start
+		align-items flex-start
+		width 200px
+
+		&._copy
+			width 100%
+			min-width 310px
+			max-width 500px
+			margin-left $gap
+
+	&-name, &-value
+		font-weight $bold
+		color $color-text
+		font-size 16px
+
+	&-row
+		display flex
+		justify-content center
+		align-items center
+		margin-top $gap
+
+		& svg
+			height 24px
+			width 24px
+
+	&-value
+		margin-left $gap-small
+
+	&-slug
+		font-weight $regular
+		font-size 14px
+		color $color-text-disabled
+		margin-left $gap-small
+		margin-top 2px
+
+	&-link
+		flex-center()
+		width 100%
+		margin-top $gap-extra-small
+
+		& p
+			display flex
+			align-items center
+			justify-content flex-start
+			height 40px
+			width 100%
+			background-color $color-background
+			font-size 16px
+			text-align left
+			padding 0 12px
+
+	&-copy
+		flex-center()
+		height 40px
+		min-width 40px
+		max-width 40px
+		background-color $color-highlight
+		transition background-color $transition
+		margin-left $gap-small
+
+		&:hover
+			background-color $color-highlight-hover
+
+		&:active
+			background-color $color-highlight-active
+
+	&._loading &-name, &._loading &-row, &._loading &-link p, &._loading &-copy
+		loading()
+

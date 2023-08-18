@@ -1,0 +1,36 @@
+.ui-input
+	display flex
+	flex-direction column
+	justify-content flex-start
+	align-items flex-start
+
+	& .ant-input
+		background-color $color-background
+		color $color-text
+		border-color $color-border
+		padding-bottom $gap
+		padding-top $gap
+		border-radius $border-radius
+
+		&:hover
+			border-color $color-border-hover
+
+		&:focus
+			box-shadow none
+			border-color $color-ui
+
+		&-affix-wrapper
+			&:hover .ant-input:not(.ant-input-disabled)
+				border-color $color-border-hover
+
+		&-prefix i
+			color $color-text-third !important // Reset base color
+
+	&__title
+		color $color-text-third
+		font-size 14px
+		margin-bottom 4px
+
+	& .ant-input-disabled
+		background-color $color-background-disabled
+		color $color-text-disabled

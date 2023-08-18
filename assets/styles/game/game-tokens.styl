@@ -1,0 +1,53 @@
+.game__tokens
+	display flex
+	flex-direction column
+	padding $gap-big $gap-large
+	background-color $color-background
+	border $border
+	border-radius $border-radius
+	margin-top $gap
+
+	&-item
+		display flex
+		flex-direction column
+
+		&:not(:first-child)
+			margin-top $gap
+			padding-top $gap
+			border-top $border
+
+	&-profile
+		display flex
+		justify-content flex-start
+		align-items center
+
+	&-text
+		display flex
+		flex-direction column
+		margin-left $gap-small
+
+	&-title
+		font-size 16px
+		font-weight $bold
+		color $color-text
+
+	&-coin
+		font-size 12px
+		color $color-text-disabled
+		margin-top $gap-small
+
+	&-stats
+		margin-top $gap
+		display flex
+		flex-wrap wrap
+		row-gap $gap
+		column-gap $gap
+
+		& .ui-statistic
+			width auto
+
+	&._loading .ui-avatar, &._loading &-name, &._loading &-coin
+		loading()
+
+	&._loading .ui-statistic
+		width 150px

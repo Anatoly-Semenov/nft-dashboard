@@ -1,0 +1,80 @@
+.profile__connect
+	padding $gap
+	width 100%
+	min-height 168px
+	position relative
+
+	&:not(:first-child)
+		margin-left $gap
+
+	&, &-background, &-gradient, &-img
+		border-radius $border-radius-middle
+
+	&-background
+		display flex
+		justify-content flex-end
+		border $border
+
+	&-background, &-gradient
+		position absolute
+		top 0
+		left 0
+
+	&-background, &-gradient, &-img
+		height 100%
+		width 100%
+
+	&-gradient
+		background linear-gradient(
+			72deg,
+			$color-highlight 39%,
+			rgba(64, 7, 255, 0) 100%
+		)
+
+	&-img
+		object-fit cover
+
+	& > *:not(&-background, &-gradient)
+		position relative
+
+	&-title
+		font-weight $bold
+		font-size 20px
+		line-height 28px
+		color $color-text
+		margin-bottom $gap-small
+
+	&-description
+		font-weight $regular
+		font-size 16px
+		line-height $line-height
+		color $color-text
+		margin-bottom $gap
+
+	&-network
+		font-weight $bold
+
+	&-button
+		background $color-background-third
+		padding $gap-small $gap
+		color $color-text-secondary
+		font-weight $bold
+		font-size 18px
+		line-height $line-height
+
+	&._fullscreen &-title
+		font-size 24px
+
+	&._fullscreen &-description
+		max-width 400px
+
+	&._fullscreen &-img
+		margin-left auto
+		max-width 389px
+
+	&._fullscreen &-gradient
+		background linear-gradient(
+			72deg,
+			$color-highlight 50%,
+			rgba(64, 7, 255, 0) 100%
+		)

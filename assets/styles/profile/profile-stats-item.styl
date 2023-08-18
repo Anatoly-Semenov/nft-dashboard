@@ -1,0 +1,49 @@
+.profile-stats__item
+	display flex
+	justify-content space-between
+	align-items center
+	margin-top $gap
+	padding $gap-big 0
+	border-radius $border-radius
+	border-bottom $border
+
+	&-info
+		flex-center()
+
+	&-img
+		height 64px
+		width 64px
+
+	&-text
+		display flex
+		flex-direction column
+		align-items flex-start
+		margin-left $gap
+		min-width 170px
+		max-width 170px
+
+	&-name
+		font-size 20px
+		font-weight $bold
+		color $color-text
+
+	&-link
+		font-size 16px
+		color $color-ui
+		margin-top 6px
+		transition color $transition
+
+		&:hover
+			color $color-ui-hover
+
+	&-analytics
+		display flex
+
+		& .ui-statistic
+			width 100px
+
+	&._loading &-img, &._loading &-name, &._loading &-link
+		loading()
+
+	&._loading &-analytics .ui-statistic:not(:last-child)
+		margin-right $gap

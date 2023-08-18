@@ -1,0 +1,83 @@
+.game
+	display flex
+	flex-direction column
+	position relative
+
+	&__background
+		position fixed
+		top -162px
+		left 0
+		width 100%
+		height 670px
+		z-index -1
+
+		&-image, &-gradient
+			height 100%
+			width 100%
+
+		&-image
+			background-size 100%
+			background-position center
+
+		&-gradient
+			background linear-gradient(1deg, $color-background 1%, #000000d4 100%)
+			position absolute
+			top 0
+			left 0
+
+	&__container
+		display flex
+		flex-direction column
+		justify-content flex-start
+		align-items flex-start
+
+		& > .ui-breadcrumb
+			margin-bottom $gap-large
+
+		& > .profile__connect
+			margin-bottom $gap-large
+
+	&__info
+		width 100%
+		display flex
+		justify-content space-between
+		align-items flex-start
+
+	&__intro
+		display flex
+		flex-direction column
+		width 390px
+
+	&__main
+		display flex
+		flex-direction column
+		justify-content flex-start
+		align-items flex-start
+		max-width 800px
+
+	&__about
+		display flex
+		flex-direction column
+		justify-content flex-start
+		align-items flex-start
+		margin-top $gap-large
+		width 100%
+
+		&-title
+			font-size 24px
+			font-weight $bold
+
+		&-description
+			font-size 18px
+			margin-top $gap
+			line-height $line-height
+
+	&._loading &__about-title, &._loading &__about-description
+		loading()
+
+	&._loading &__about-title
+		width 200px
+
+	&._loading &__about-description
+		width 100%
+		height 100px

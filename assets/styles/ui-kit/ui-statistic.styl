@@ -1,0 +1,96 @@
+.ui-statistic
+	display flex
+	flex-direction column
+	justify-content flex-start
+	align-items flex-start
+	width 160px
+
+	&__title
+		display flex
+		color $color-text-disabled
+		font-size 14px
+		min-height 19px
+		margin-bottom 4px
+
+		& svg
+			height 18px
+			margin-top -1px
+
+			& path
+				fill $color-text-disabled
+
+		&._light
+			color $color-text
+
+			& path
+				fill $color-text
+
+	&__info
+		height 18px
+		min-width 18px
+		max-width 18px
+		padding 2px
+		margin-top 1px
+		margin-left 4px
+		cursor pointer
+
+	&__data
+		display flex
+		justify-content flex-start
+		align-items center
+		flex-wrap wrap
+
+		&-text
+			margin-right 7px
+			font-weight $bold
+
+	&__delta
+		display flex
+		justify-content flex-start
+		align-items center
+		font-size 12px
+		color $color-highlight
+
+		& i
+			margin-right 7px
+
+		& path
+			fill $color-highlight
+
+		&._negative
+			color $color-error
+
+			& svg
+				transform rotate(180deg)
+
+			& path
+				fill $color-error
+
+	&._small &__data-text
+		font-size 14px
+
+	&._middle &__data-text
+		font-size 18px
+
+	&._large &__data-text
+		font-size 24px
+
+	&._loading &__title
+		loading()
+		width 70%
+		height 25px
+
+		& svg
+			display none
+
+	&._loading &__data
+		loading()
+		width 100%
+		height 45px
+		margin-top 4px
+
+		& *
+			display none
+
+	&._loading &__delta
+		opacity 0

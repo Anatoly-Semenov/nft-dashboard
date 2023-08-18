@@ -1,0 +1,33 @@
+.ui-game
+	display flex
+	justify-content flex-start
+	align-items center
+	max-height 50px
+	cursor pointer
+	transition opacity $transition
+
+	& .ui-avatar
+		border $border
+
+	&:hover
+		opacity .5
+
+	&__info
+		margin-left $gap-small
+		text-align left
+
+	&__name
+		font-size 18px
+		font-weight $bold
+
+	&__token
+		font-size 12px
+		color $color-text-third
+		margin-top 5px
+
+	&._loading .ui-avatar, &._loading &__name, &._loading &__token
+		loading()
+
+	&._loading .ui-avatar
+		border-radius $border-radius-circle
+

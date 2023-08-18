@@ -1,0 +1,84 @@
+.nft__item
+	position relative
+	display flex
+	justify-content center
+	align-items flex-end
+	height 260px
+	min-width 225px
+	max-width 225px
+	border-radius $border-radius
+	background linear-gradient(145.24deg, #30336A 10.46%, #20224A 32.84%, #161832 100%)
+	box-shadow $box-shadow
+
+	&-count
+		position absolute
+		top 14px
+		left 14px
+		display flex
+		justify-content center
+		align-items center
+		color $color-ui
+
+		& svg
+			margin-right 5px
+
+		& path
+			fill $color-ui
+
+	&-content
+		display flex
+		flex-direction column
+		justify-content center
+		align-items center
+		width 100%
+		padding 0 $gap-small
+		margin-bottom -20px
+
+		& .ui-button
+			height 40px
+			width 125px
+			font-weight $bold
+
+	&-img
+		pointer-events none
+		user-select none
+		width 160px
+		position absolute
+		top $gap
+
+		& img
+			max-height 100%
+			max-width 100%
+
+	&-name, &-description
+		text-align center
+
+	&-name
+		font-size 20px
+		font-weight $bold
+		margin-bottom 4px
+		color $color-text
+
+	&-description
+		font-size 14px
+		color $color-text-third
+		margin-bottom 14px
+		height 40px
+
+	&._loading
+		pointer-events none
+
+	&._loading &-count, &._loading &-name, &._loading &-description
+		loading()
+
+	&._loading &-name
+		width 160px
+
+	&._loading &-description
+		width 120px
+
+	&._loading &-logo, &._loading &-img img, svg
+		opacity 0
+
+	&._loading &-content .ui-button
+		color transparent

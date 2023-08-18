@@ -1,0 +1,65 @@
+.dashboard__top
+	display flex
+	flex-direction column
+	border-radius $border-radius
+	background-color #161832
+	border $border
+	padding $gap
+	width 100%
+
+	&:not(:last-child)
+		margin-right $gap-big
+
+	&-title
+		font-size 20px
+		font-weight $bold
+		margin-bottom $gap
+
+	&-info
+		position relative
+		display flex
+		justify-content flex-start
+		align-items center
+		background-color $color-loading
+		border-radius $border-radius
+		padding $gap
+
+	&-profile
+		display flex
+		flex-direction column
+		justify-content flex-start
+		align-items flex-start
+		margin-left 10px
+
+	&-name
+		font-size 20px
+
+	&-param
+		font-size 14px
+		color $color-link
+
+	&-link
+		display flex
+		align-items center
+		position absolute
+		bottom $gap
+		right $gap
+		font-size 14px
+		color $color-link
+
+		& i
+			margin-left 4px
+			font-size 10px
+
+	&._loading &-logo, &._loading &-title, &._loading &-name, &._loading &-param, &._loading &-link
+		loading()
+
+	&._loading &-logo
+		border-radius $border-radius-circle
+
+	&._loading &-name
+		width 110px
+
+	&._loading &-param
+		margin-top 4px
+		width 50px

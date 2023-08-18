@@ -1,0 +1,55 @@
+.layout__header
+	height 72px
+	margin-bottom $gap-extra-large
+
+	& > *:not(.layout__header-background)
+		position relative
+		z-index 2
+
+	&-main
+		display flex
+		justify-content flex-start
+		align-items center
+
+	&-menu
+		display flex
+		margin-left $gap-big
+
+	&-logo img
+		width 90px
+
+	&-link
+		font-size 14px
+		color $color-text-third
+		transition color $transition
+
+		&:hover
+			color $color-link
+
+	&-link
+		padding 12px
+
+		&.nuxt-link-exact-active
+			color $color-link
+
+	&-connect
+		display flex
+
+		& > *:not(:first-child)
+			margin-left $gap-small
+
+	& .ui-connect._connected
+		cursor pointer
+
+	&-dropdown
+		width 175px
+
+		& > *
+			width 100%
+
+		& a, & button
+			display flex
+			justify-content flex-start
+			align-items center
+			height 100%
+			width 100%

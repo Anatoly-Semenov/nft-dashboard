@@ -1,0 +1,41 @@
+.game__pictures
+	display flex
+	justify-content flex-start
+	align-items center
+	margin-top $gap-big
+
+	&-item, &-modal
+		background-size cover
+		background-position center
+		background-color $color-background-secondary
+		border-radius $border-radius-big
+		border $border
+
+	&-item
+		height 64px
+		width 98px
+		transition opacity $transition
+
+		&:not(:last-child)
+			margin-right 12px
+
+		&:hover
+			opacity .7
+
+		&:active
+			opacity .5
+
+	&-modal
+		height 200px
+		width 400px
+
+	&-image
+		width fit-content !important
+		height fit-content
+		max-height 100%
+		max-width 100%
+		border-radius $border-radius-big
+		border $border
+
+	&._loading &-item
+		loading()

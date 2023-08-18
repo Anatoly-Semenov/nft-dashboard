@@ -1,0 +1,102 @@
+.leaderboard__rewards
+	display flex
+	justify-content space-between
+	align-items center
+	padding $gap $gap-big
+	border $border
+	border-radius 24px
+	margin-top $gap-large
+	color $color-text
+
+	&-info
+		display flex
+		align-items center
+
+	&-intro
+		display flex
+		flex-direction column
+		justify-content flex-start
+		align-items flex-start
+		margin-right $gap
+
+	&-img
+		height 32px
+		width 32px
+
+
+	&-title
+		font-size 20px
+		font-weight $bold
+		line-height 28px
+		color $color-text
+
+		& svg
+			width 12px
+			margin-right $gap-small
+
+	&-more
+		font-size 14px
+		color $color-ui
+		line-height 20px
+		transition color $transition
+		margin-left $gap-big
+
+		&:hover
+			color $color-ui-hover
+
+		&:active
+			color $color-ui-active
+
+	&-list
+		display flex
+		align-items center
+		justify-content flex-end
+
+	&-item
+		display flex
+		align-items center
+		width 240px
+		transition opacity $transition
+
+		&:hover
+			opacity .7
+
+		&:not(:first-child)
+			margin-left $gap-large
+			padding-left $gap-large
+			border-left $border
+
+	&-about
+		display flex
+		flex-direction column
+		justify-content flex-start
+		align-items flex-start
+		margin-left $gap-small
+
+	&-name
+		font-size 14px
+		font-weight $bold
+		color $color-text
+
+	&-name, &-description
+		text-align left
+
+	&-description
+		font-size 12px
+		color $color-text-disabled
+		max-width 140px
+
+	&._loading &-title, &._loading &-more, &._loading &-img, &._loading &-name, &._loading &-description
+		loading()
+
+	&._loading &-more
+		margin-left 0
+
+	&._loading &-more, &._loading &-description
+		margin-top $gap-extra-small
+
+	&._loading &-img
+		fill-opacity  0
+		border-radius $border-radius-circle
+
+

@@ -1,0 +1,89 @@
+.game__charts
+	margin-top 52px
+
+	&-title
+		font-weight $bold
+		font-size 34px
+		margin-bottom $gap-big
+		margin-top $gap-large
+
+	&-subtitle
+		font-weight $bold
+		font-size 24px
+		margin-bottom $gap-big
+
+	&-list
+		display flex
+		flex-direction column
+
+	&-content
+		display flex
+		flex-direction column
+		justify-content flex-start
+		align-items flex-start
+
+	&-row
+		display flex
+		max-height 570px
+		width 100%
+
+		&:not(:first-child)
+			margin-top $gap-big
+
+		&._full
+			min-height 570px
+
+	&-twitter
+		display flex
+		justify-content center
+		height 460px
+		width 35%
+
+		margin-left $gap-big
+		overflow auto
+
+		& > .twitter-timeline
+			width 100%
+			height 100%
+
+			& > iframe
+				border-radius $border-radius
+
+		&._loading
+			loading()
+
+	&-earning
+		min-width 800px
+
+		&-info, &-item
+			display flex
+			align-items center
+			justify-content space-between
+
+		&-block
+			width 33.33%
+			flex-center()
+
+		&-list
+			width 160px
+			display flex
+			flex-direction column
+			justify-content flex-start
+			align-items stretch
+
+		&-item
+			font-size 14px
+			color $color-text
+
+			&:not(:first-child)
+				margin-top $gap-extra-small
+
+			& span
+				display flex
+				justify-content flex-end
+				width 70px
+				font-weight $bold
+
+		& .game__chart-stats .ui-statistic._small
+			min-width auto
+			max-width auto

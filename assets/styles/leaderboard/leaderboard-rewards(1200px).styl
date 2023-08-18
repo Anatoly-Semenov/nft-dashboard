@@ -1,0 +1,20 @@
+@media screen and (max-width: 1200px)
+	.leaderboard__rewards
+		flex-direction column
+		justify-content flex-start
+		align-items flex-start
+		padding 0
+		width fit-content
+		border-radius $border-radius-big
+
+		&-intro, &-list
+			padding $gap-big
+			width 100%
+
+		&-list
+			background-color $color-background-secondary
+			border-bottom-left-radius $border-radius-big
+			border-bottom-right-radius $border-radius-big
+
+		&-item:not(:first-child)
+			border-color $color-border-third

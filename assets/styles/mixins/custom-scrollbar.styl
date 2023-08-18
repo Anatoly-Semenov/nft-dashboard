@@ -1,0 +1,14 @@
+custom-scrollbar()
+	&::-webkit-scrollbar
+		width 7px
+		height 7px
+
+	&::-webkit-scrollbar-track
+		background-color $color-background
+		border-radius $border-radius-circle
+
+	&::-webkit-scrollbar-thumb
+		border none
+		border-radius $border-radius-circle
+		background-color $color-loading
+		background-clip content-box

@@ -1,0 +1,40 @@
+.profile-game__add
+	display flex
+	flex-direction column
+	background-color $color-background-secondary
+	padding $gap-big
+	margin-top $gap-extra-large
+
+	&-title
+		font-size 24px
+		font-weight $bold
+
+	&-description
+		font-size 16px
+		line-height $line-height
+		color $color-text-third
+		margin-top $gap-small
+		line-break()
+
+	&-fields
+		margin-top $gap-big
+		width 100%
+		display flex
+
+		& .ui-input
+			width 100%
+			margin-right $gap
+
+			& input
+				height 50px
+				background-color $color-background-third
+				border-color $color-border-light
+
+				&:hover
+					border-color $color-ui-hover
+
+		& .ui-button
+			height 50px
+			min-width 107px
+			max-width 107px
+			font-size 18px

@@ -1,0 +1,26 @@
+.game__statistics
+	width 100%
+	display flex
+	flex-wrap wrap
+	row-gap 30px
+	column-gap 30px
+	margin-top 48px
+	background-color $color-background
+	padding $gap-big $gap-large
+	border $border
+	border-radius $border-radius
+
+	&-risk
+		font-size 24px
+		font-weight $bold
+		color $color-text
+		text-transform uppercase
+
+		&._high
+			color $color-error
+
+		&._medium
+			color $color-warning
+
+		&._low
+			color $color-ui-hover

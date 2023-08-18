@@ -1,0 +1,95 @@
+.dashboard__games
+	&-filters
+		display flex
+		justify-content flex-start
+		align-items center
+		margin-bottom 70px
+
+	&-checkboxes
+		display flex
+		margin-left $gap-big
+
+		& > *:not(:last-child)
+			margin-right $gap-big
+
+	&, &-info
+		display flex
+		flex-direction column
+		justify-content flex-start
+		align-items flex-start
+
+	&-title
+		display flex
+		justify-content flex-start
+		align-items center
+		margin-left -16px
+
+		& svg
+			margin-right $gap-small
+
+	&-item
+		display flex
+		justify-content flex-start
+		align-items center
+
+	&-info
+		margin-left $gap-small
+
+	&-name
+		font-size 18px
+		font-weight $bold
+
+	&-link
+		display flex
+		align-items center
+		font-size 14px
+		color $color-link
+
+		& .anticon
+			margin-left 3px
+
+		& path
+			fill $color-link
+
+	& .ui-table
+		& .ui-statistic
+			flex-center()
+			margin-left auto
+			margin-right auto
+
+	& .ui-table._loading &-name, & .ui-table._loading &-link, & .ui-table._loading p:not(&-param, &-param-description), & .ui-table._loading .ui-avatar
+		loading()
+		height 22px
+		width 60px
+		margin-left auto
+		margin-right auto
+
+	& .ui-table._loading div&-info p&-name
+		height 25px
+		width 65px
+		margin-left 0
+
+	& .ui-table._loading &-link
+		height 18px
+		width 84px
+		margin-top 4px
+
+	& .ui-table._loading .ui-avatar
+		border-radius $border-radius-circle
+		height 50px
+		width 50px
+
+	& .ui-table._loading._loading &-link path
+		fill transparent
+
+	&-column
+		flex-center()
+		flex-direction column
+
+	&-param
+		font-size 18px
+		color $color-text
+
+		&-description
+			font-size 12px
+			color $color-text-disabled

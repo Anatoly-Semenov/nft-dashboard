@@ -1,0 +1,70 @@
+.ui-connect
+	display flex
+	justify-content center
+	align-items center
+	padding 9px $gap
+	background $color-ui
+	box-shadow 0 12px 24px rgba(0, 0, 0, 0.06)
+	color $color-text-inversion
+	font-size 16px
+	font-weight $bold
+	height 40px
+	min-width 140px
+	transitionMixin(box-shadow, background, color)
+
+	&:hover
+		background $gradient-ui
+		box-shadow $box-shadow-ui
+
+	&:disabled
+		opacity 1
+		cursor default
+
+	&._highlight
+		background $gradient-highlight
+		box-shadow $box-shadow-highlight
+		color $color-text
+
+		&:hover
+			background $color-highlight
+			box-shadow $box-shadow-highlight-hover
+
+		&:active
+			color $color-highlight-active
+
+	&__icon
+		margin-right $gap-small
+
+	&__avatar
+		flex-center()
+		margin-right 10px
+
+	&._loading
+		loading()
+		box-shadow none
+
+	&._loading &__label,
+	&._loading &__loading
+		loading()
+		box-shadow 0 12px 24px #00000080
+
+	&._loading &__label
+		height 20px
+
+	&._loading &__loading
+		height 30px
+		min-width 30px
+		max-width 30px
+		margin-right $gap-small
+		border-radius $border-radius-circle
+
+	&._connected
+		background-color $color-background-third
+		color $color-text
+
+		&:hover
+			background $color-border
+			box-shadow 0 12px 24px rgba(0, 0, 0, 0.06)
+
+	&._connected:not(._solana) path
+		fill $color-text

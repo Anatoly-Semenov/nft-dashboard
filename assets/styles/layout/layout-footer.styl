@@ -1,0 +1,63 @@
+.layout__footer
+	display flex
+	flex-direction column
+	width 100%
+	overflow-y clip
+	padding-top 50px
+	padding-bottom $gap-small
+	margin-top auto
+
+	&-main, &-completion
+		width 100%
+		display flex
+		justify-content space-between
+		align-items center
+
+	&-main
+		border-bottom $border
+		padding-bottom $gap
+		margin-bottom $gap
+
+	&-logo
+		height 32px
+
+		& path
+			fill $color-ui
+
+	&, &-logo
+		position relative
+
+	&-contacts
+		display flex
+		justify-content flex-end
+		align-items center
+		position relative
+
+		& > *:not(:last-child)
+			margin-right 36px
+
+	&-button
+		transition opacity $transition
+		display flex
+		justify-content center
+		align-items center
+
+		&:hover
+			opacity .7
+
+		& svg
+			width 32px
+			height auto
+
+			& path
+				fill $color-text
+				fill-opacity 1
+
+	&-completion
+		& span
+			color $color-text-disabled
+			transition color $transition
+			font-size 14px
+
+		& a:hover span
+			color $color-ui

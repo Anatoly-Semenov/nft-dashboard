@@ -1,0 +1,39 @@
+.calendar__trending
+	display flex
+	flex-direction column
+	width 240px
+	border-radius $border-radius
+	border $border
+	background-color $color-background-secondary
+	padding $gap
+
+	&-intro
+		width 100%
+		display flex
+		justify-content space-between
+		align-items flex-start
+
+	&-socials
+		width 100%
+		display flex
+		flex-direction column
+		margin-top $gap
+
+	&-social
+		display flex
+		justify-content space-between
+		align-items center
+		padding-top $gap-small
+
+		&:not(:last-child)
+			border-bottom 1px solid $color-border-hover
+			padding-bottom $gap-small
+
+	&-name
+		flex-center()
+
+		& svg
+			margin-right $gap-small
+
+	&._loading &-name
+		loading()
