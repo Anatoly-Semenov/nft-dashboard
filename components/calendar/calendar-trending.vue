@@ -49,7 +49,7 @@ const iconDiscord = () =>
 	)
 
 // Interfaces
-import type { GameService } from "@sk-types"
+import type { GameService } from "@nft-types"
 
 export default Vue.extend({
 	name: "calendar-trending",

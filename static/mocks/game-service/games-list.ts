@@ -1,4 +1,4 @@
-import type { GameService } from "@sk-types"
+import type { GameService } from "@nft-types"
 
 const gamesList: GameService.Game[] = [0, 1, 2, 3, 4, 5, 6, 7].map((index) => {
 	return {

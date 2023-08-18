@@ -55,7 +55,7 @@ const iconArrowLink = () =>
 import { profileGamesPreviewList as loadingList } from "~/static/mocks"
 
 // Types
-import type { ProfileService } from "@sk-types"
+import type { ProfileService } from "@nft-types"
 
 export default Vue.extend({
 	name: "profile-games",

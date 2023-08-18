@@ -13,7 +13,7 @@ const isDate = (value: string): boolean => {
 }
 
 // Types
-import type { GameService, ArticleService, ResponseList } from "@sk-types"
+import type { GameService, ArticleService, ResponseList } from "@nft-types"
 import type { GameProfile, SortOrder } from "~/types"
 type Game = GameService.Game
 type GameDetail = GameService.GameDetail

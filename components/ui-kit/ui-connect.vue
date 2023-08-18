@@ -29,7 +29,7 @@ import { PropOptions } from "vue"
 import connectMixin from "~/mixins/connect"
 
 // Types
-import { UserService } from "@sk-types"
+import { UserService } from "@nft-types"
 
 // Icons
 const iconDiscord = () =>

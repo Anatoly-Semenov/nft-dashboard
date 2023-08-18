@@ -2,7 +2,7 @@ import Vue from "vue"
 import { mapGetters } from "vuex"
 
 // Types
-import { GameService } from "@sk-types"
+import { GameService } from "@nft-types"
 
 interface Link {
 	icon: any

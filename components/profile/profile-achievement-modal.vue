@@ -83,7 +83,7 @@ const profileAchievementModalItem = () =>
 // Types
 import type { PropType } from "vue"
 import type { ProfileType } from "~/types"
-import { ProfileService, NftService } from "@sk-types"
+import { ProfileService, NftService } from "@nft-types"
 
 export default mixins(networkMixin, profileMultipleMint).extend({
 	name: "profile-achievement-modal",

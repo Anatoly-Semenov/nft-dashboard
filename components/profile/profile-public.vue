@@ -45,7 +45,7 @@ const iconWallet = () =>
 import { publicProfile as loadingProfile } from "~/static/mocks"
 
 // Types
-import { ProfileService } from "@sk-types"
+import { ProfileService } from "@nft-types"
 
 export default Vue.extend({
 	name: "profile-public",

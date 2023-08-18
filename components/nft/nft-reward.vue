@@ -30,7 +30,7 @@ const iconTimer = () =>
 	)
 
 // Types
-import type { AirdropService } from "@sk-types"
+import type { AirdropService } from "@nft-types"
 type type = "short" | "full"
 
 export default Vue.extend({

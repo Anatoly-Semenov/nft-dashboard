@@ -64,7 +64,7 @@ import { profileAvailableAchievementsList as loadingList } from "~/static/mocks"
 import _cloneDeep from "lodash/cloneDeep"
 
 // Types
-import { ProfileService } from "@sk-types"
+import { ProfileService } from "@nft-types"
 
 export default mixins(profileMultipleMint, networkMixin).extend({
 	name: "profile-available",

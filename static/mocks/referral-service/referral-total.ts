@@ -1,4 +1,4 @@
-import type { ReferralService } from "@sk-types/"
+import type { ReferralService } from "@nft-types/"
 
 const referralTotal: ReferralService.Total = {
 	users: 13,

@@ -1,4 +1,4 @@
-import type { ProfileService } from "@sk-types"
+import type { ProfileService } from "@nft-types"
 
 const profileAvailableAchievementsList: ProfileService.ResponseAvailableAchievements =
 	[0, 1, 2, 3, 4].map((index) => {

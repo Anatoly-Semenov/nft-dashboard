@@ -34,7 +34,7 @@ import calendarTrending from "~/components/calendar/calendar-trending.vue"
 import calendarUpcoming from "~/components/calendar/calendar-upcoming.vue"
 
 // Types
-import type { GameService } from "@sk-types"
+import type { GameService } from "@nft-types"
 
 export default Vue.extend({
 	name: "calendar-widgets",

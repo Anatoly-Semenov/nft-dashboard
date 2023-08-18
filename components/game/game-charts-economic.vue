@@ -68,7 +68,7 @@ const gameChart = () =>
 // Types
 import type { UiChartOptions } from "~/types/ui-kit/ui-chart"
 import type { EconomicSeries } from "~/types/game-charts"
-import type { GameService } from "@sk-types"
+import type { GameService } from "@nft-types"
 
 // Chart interfaces
 interface ChartsProps {

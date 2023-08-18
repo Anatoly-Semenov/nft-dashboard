@@ -107,7 +107,7 @@ import { gamesList as loadingList } from "~/static/mocks"
 
 // Interfaces
 import type { UiTableColumn } from "~/types/ui-kit/ui-table"
-import type { GameService } from "@sk-types"
+import type { GameService } from "@nft-types"
 
 interface Checkbox {
 	value: boolean

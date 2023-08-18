@@ -1,6 +1,6 @@
 // Types
 import type { MutationTree, ActionTree, GetterTree } from "vuex"
-import type { SocialService } from "@sk-types"
+import type { SocialService } from "@nft-types"
 import type {
 	Series,
 	SeriesName,

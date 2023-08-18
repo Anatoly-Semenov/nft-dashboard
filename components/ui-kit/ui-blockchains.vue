@@ -19,7 +19,7 @@
 import Vue from "vue"
 
 // Types
-import type { Chain } from "@sk-types"
+import type { Chain } from "@nft-types"
 
 export default Vue.extend({
 	name: "ui-blockchains",

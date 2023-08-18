@@ -39,7 +39,7 @@ import gameSocialMobile from "~/components/game/game-social-mobile.vue"
 import widthMixin from "~/mixins/width"
 
 // Types
-import type { Chain } from "@sk-types/src/api/base"
+import type { Chain } from "@nft-types/src/api/base"
 import type { GameProfile } from "~/types"
 
 export default mixins(widthMixin).extend({

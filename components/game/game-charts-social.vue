@@ -44,7 +44,7 @@ const gameChart = () =>
 	import(/* webpackChunkName: "game-chart" */ "./game-chart.vue")
 
 // Types
-import type { SocialService } from "@sk-types"
+import type { SocialService } from "@nft-types"
 
 import type { UiChartsBlockProps } from "~/types/ui-kit/ui-charts-block"
 

@@ -55,7 +55,7 @@ import iconCrown from "~/assets/img/icons/icon-crown.svg"
 import iconPen from "~/assets/img/icons/icon-pen.svg"
 
 // Types
-import type { ProfileService } from "@sk-types"
+import type { ProfileService } from "@nft-types"
 
 export default mixins(widthMixin).extend({
 	name: "profile-main",

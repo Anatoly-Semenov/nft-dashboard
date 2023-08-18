@@ -1,4 +1,4 @@
-import type { GameService } from "@sk-types"
+import type { GameService } from "@nft-types"
 
 const gameTokens: GameService.TokenContract[] = [0, 1].map((index) => {
 	return {

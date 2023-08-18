@@ -1,6 +1,6 @@
 // Types
 import type { ActionTree, GetterTree, MutationTree } from "vuex"
-import { ProfileService, AchievementService } from "@sk-types"
+import { ProfileService, AchievementService } from "@nft-types"
 
 type MeResponse = null | ProfileService.Me
 

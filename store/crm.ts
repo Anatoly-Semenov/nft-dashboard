@@ -1,6 +1,6 @@
 // Types
 import type { MutationTree, ActionTree, GetterTree } from "vuex"
-import type { GameService, AnalyticsService } from "@sk-types"
+import type { GameService, AnalyticsService } from "@nft-types"
 import type { UiTableColumn, UiTableRow } from "~/types/ui-kit/ui-table"
 import type { SortOrder } from "~/types"
 type DayFilter = "1D" | "7D" | "30D"

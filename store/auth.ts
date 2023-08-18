@@ -1,6 +1,6 @@
 // Types
 import type { MutationTree, ActionTree, GetterTree } from "vuex"
-import type { SocialService, UserService } from "@sk-types"
+import type { SocialService, UserService } from "@nft-types"
 
 // Lodash
 import { cloneDeep } from "lodash"

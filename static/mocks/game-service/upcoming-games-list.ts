@@ -1,4 +1,4 @@
-import type { GameService } from "@sk-types"
+import type { GameService } from "@nft-types"
 
 // @ts-ignore
 const upcomingGamesList: GameService.UpcomingGame[] = [

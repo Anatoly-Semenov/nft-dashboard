@@ -91,7 +91,7 @@ import { leaderboardList as loadingLeaderboard } from "~/static/mocks"
 
 // Types
 import type { UiTableColumn } from "~/types/ui-kit/ui-table"
-import type { ProfileService } from "@sk-types"
+import type { ProfileService } from "@nft-types"
 import type { SortOrder } from "~/types"
 
 export default mixins(widthMixin).extend({

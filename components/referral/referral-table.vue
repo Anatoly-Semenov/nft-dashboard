@@ -88,7 +88,7 @@ import widthMixin from "~/mixins/width"
 import { referralUsersList as loadingUsers } from "~/static/mocks"
 
 // Types
-import type { ReferralService, UserService } from "@sk-types/"
+import type { ReferralService, UserService } from "@nft-types/"
 import type { UiTableColumn } from "~/types/ui-kit/ui-table"
 
 export default mixins(widthMixin).extend({

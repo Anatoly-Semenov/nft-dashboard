@@ -1,6 +1,6 @@
 // Types
 import type { ActionTree, GetterTree, MutationTree } from "vuex"
-import type { ProfileService, RewardsService } from "@sk-types"
+import type { ProfileService, RewardsService } from "@nft-types"
 
 type Filters = "by_days" | "q" | "limit" | "page"
 type Sorter = "index" | "total_achievements" | "games" | "points"

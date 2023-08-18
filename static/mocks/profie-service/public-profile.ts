@@ -1,4 +1,4 @@
-import { ProfileService } from "@sk-types"
+import { ProfileService } from "@nft-types"
 
 const publicProfile: ProfileService.PublicProfile = {
 	avatar: null,

@@ -28,7 +28,7 @@
 import Vue from "vue"
 import { Crumb } from "~/types/ui-kit/ui-breadcrumb"
 import { mapActions, mapGetters, mapMutations } from "vuex"
-import type { AirdropService } from "@sk-types"
+import type { AirdropService } from "@nft-types"
 
 // Components
 const nftReward = () =>

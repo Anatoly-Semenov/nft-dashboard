@@ -4,7 +4,7 @@ import { ActionTree, GetterTree, MutationTree } from "vuex"
 import { cloneDeep } from "lodash"
 
 // Types
-import { ReferralService, Meta, ResponseListMeta } from "@sk-types"
+import { ReferralService, Meta, ResponseListMeta } from "@nft-types"
 type UsersResponse = ResponseListMeta<ReferralService.User>
 
 const stateObject = {

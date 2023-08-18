@@ -1,4 +1,4 @@
-import type { GameService } from "@sk-types"
+import type { GameService } from "@nft-types"
 
 const gamesList: GameService.GameDetail = {
 	id: 2,

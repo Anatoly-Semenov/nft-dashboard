@@ -1,4 +1,4 @@
-import type { RewardsService } from "@sk-types"
+import type { RewardsService } from "@nft-types"
 
 const rewards: RewardsService.Response = {
 	link: "google.com",

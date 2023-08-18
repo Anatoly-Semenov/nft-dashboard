@@ -141,7 +141,7 @@ import { upcomingGamesList as loadingList } from "~/static/mocks"
 
 // Types
 import type { UiTableColumn } from "~/types/ui-kit/ui-table"
-import type { GameService } from "@sk-types"
+import type { GameService } from "@nft-types"
 
 export default mixins(widthMixin).extend({
 	name: "calendar-table",

@@ -32,7 +32,7 @@ import profileAchievements from "./profile-achievements.vue"
 import { profileAchievementsList as loadingList } from "~/static/mocks"
 
 // Types
-import type { ProfileService } from "@sk-types"
+import type { ProfileService } from "@nft-types"
 import type { PropType } from "vue"
 import type { ProfileType } from "~/types"
 

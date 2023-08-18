@@ -33,7 +33,7 @@ import Vue from "vue"
 import { mapActions, mapGetters } from "vuex"
 
 // Types
-import type { AirdropService, NftService } from "@sk-types"
+import type { AirdropService, NftService } from "@nft-types"
 
 // Components
 const nftItem = () =>

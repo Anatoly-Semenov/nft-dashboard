@@ -5,7 +5,7 @@ import { mapActions, mapGetters, mapMutations } from "vuex"
 import gameProfile from "~/components/game/game-profile.vue"
 
 // Types
-import type { GameService } from "@sk-types"
+import type { GameService } from "@nft-types"
 import type { Crumb } from "~/types/ui-kit/ui-breadcrumb"
 
 export default Vue.extend({

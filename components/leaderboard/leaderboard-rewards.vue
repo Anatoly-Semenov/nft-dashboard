@@ -55,7 +55,7 @@ import { rewards as loadingData } from "~/static/mocks"
 import iconFire from "~/assets/img/icons/icon-fire.svg"
 
 // Types
-import type { RewardsService } from "@sk-types"
+import type { RewardsService } from "@nft-types"
 
 export default Vue.extend({
 	name: "leaderboard-rewards",

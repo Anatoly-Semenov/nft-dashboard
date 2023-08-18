@@ -24,7 +24,7 @@ import Vue, { PropOptions } from "vue"
 import iconLightning from "~/assets/img/icons/icon-lightning.svg"
 
 // Interfaces
-import type { NftService } from "@sk-types"
+import type { NftService } from "@nft-types"
 
 export default Vue.extend({
 	name: "nft-item",

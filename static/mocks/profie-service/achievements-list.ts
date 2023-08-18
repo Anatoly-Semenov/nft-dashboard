@@ -1,4 +1,4 @@
-import type { ProfileService } from "@sk-types"
+import type { ProfileService } from "@nft-types"
 
 // @ts-ignore
 const achievementsList: ProfileService.Achievement[] = [0, 1, 2, 3].map(

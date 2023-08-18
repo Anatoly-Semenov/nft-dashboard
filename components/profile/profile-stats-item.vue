@@ -38,8 +38,8 @@ const profileStatsCharts = () =>
 	)
 
 // Types
-import type { ProfileService } from "@sk-types"
-import type { GameService } from "@sk-types"
+import type { ProfileService } from "@nft-types"
+import type { GameService } from "@nft-types"
 
 export default Vue.extend({
 	name: "profile-stats-item",

@@ -117,7 +117,7 @@ import walletMixin from "~/mixins/walelt"
 
 // Types
 import type { Crumb } from "~/types/ui-kit/ui-breadcrumb"
-import type { UserService } from "@sk-types"
+import type { UserService } from "@nft-types"
 
 export default mixins(walletMixin).extend({
 	name: "page-profile-edit",

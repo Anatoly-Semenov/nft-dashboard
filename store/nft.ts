@@ -5,7 +5,7 @@ import type {
 	ProfileService,
 	NftService,
 	ResponseList
-} from "@sk-types"
+} from "@nft-types"
 
 // Lodash
 import { cloneDeep } from "lodash"

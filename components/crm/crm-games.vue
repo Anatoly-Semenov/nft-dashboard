@@ -23,7 +23,7 @@ import Vue from "vue"
 import { mapActions, mapGetters } from "vuex"
 
 // Interfaces
-import type { GameService } from "@sk-types"
+import type { GameService } from "@nft-types"
 
 export default Vue.extend({
 	name: "crm-games",

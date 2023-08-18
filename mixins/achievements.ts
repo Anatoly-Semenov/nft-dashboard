@@ -5,7 +5,7 @@ import { mapActions } from "vuex"
 import iconPower from "~/assets/img/icons/icon-power.svg"
 
 // Types
-import type { NftService, ProfileService, GameService } from "@sk-types"
+import type { NftService, ProfileService, GameService } from "@nft-types"
 type Achievement = ProfileService.ProfileAchievement
 
 export const profileAchievementMixin = Vue.extend({

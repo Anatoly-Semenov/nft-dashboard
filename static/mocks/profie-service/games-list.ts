@@ -1,4 +1,4 @@
-import type { ProfileService } from "@sk-types"
+import type { ProfileService } from "@nft-types"
 
 // @ts-ignore
 const gamesList: ProfileService.Game[] = [0, 1, 2, 3, 4].map((index) => {

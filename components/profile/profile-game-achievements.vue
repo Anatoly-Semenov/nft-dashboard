@@ -147,7 +147,7 @@ const iconUser = () =>
 	import(/* webpackChunkName: "icon-user" */ "~/assets/img/icons/icon-user.svg")
 
 // Types
-import type { ProfileService, NftService } from "@sk-types"
+import type { ProfileService, NftService } from "@nft-types"
 
 // Mocks
 import { profileAchievementsGameList as loadingList } from "~/static/mocks"

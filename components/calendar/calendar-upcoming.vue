@@ -34,7 +34,7 @@ import Vue, { PropOptions } from "vue"
 import dayjs from "dayjs"
 
 // Types
-import type { GameService } from "@sk-types"
+import type { GameService } from "@nft-types"
 type DateType = "release" | "ino" | "ido"
 
 export default Vue.extend({

@@ -85,7 +85,7 @@ import iconArrowsTop from "~/assets/img/icons/icon-arrows-top.svg"
 import iconArrowLink from "~/assets/img/icons/icon-arrow-up-right.svg"
 
 // Types
-import type { ProfileService } from "@sk-types"
+import type { ProfileService } from "@nft-types"
 import type { ProfileType } from "~/types"
 
 export default mixins(profileMultipleMint).extend({

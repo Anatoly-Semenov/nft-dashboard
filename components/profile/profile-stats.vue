@@ -43,7 +43,7 @@ import walletMixin from "~/mixins/walelt"
 import { profileGamesList as loadingGames } from "~/static/mocks"
 
 // Types
-import type { ProfileService } from "@sk-types"
+import type { ProfileService } from "@nft-types"
 interface Total {
 	title: string
 	value: number

@@ -68,7 +68,7 @@ const gameArticles = () =>
 
 // Interfaces
 import type { Crumb } from "~/types/ui-kit/ui-breadcrumb"
-import type { GameService } from "@sk-types"
+import type { GameService } from "@nft-types"
 
 export default mixins(widthMixin, gameDetailMixin).extend({
 	name: "page-games-detail",

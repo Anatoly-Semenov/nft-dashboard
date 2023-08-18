@@ -1712,19 +1712,19 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-4.6.0.tgz#3c7c9c46e678feefe7a2e5bb609d3dbd665ffb3f"
   integrity sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==
 
-"@sk-requests@git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/api-requests.git#main":
+"@nft-requests@git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/api-requests.git#main":
   version "0.1.0"
   resolved "git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/api-requests.git#6e3fce2c6112a6517575e9f1d2d1edc237dcbb90"
 
-"@sk-types@git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/types.git#main":
+"@nft-types@git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/types.git#main":
   version "0.1.0"
   resolved "git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/types.git#8b3a4bb93fc37c35698a458d5f6b74e82fb458d6"
 
-"@sk-ui-kit@git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/ui-kit#main":
+"@nft-ui-kit@git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/ui-kit#main":
   version "1.0.0"
   resolved "git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/ui-kit#48f94885ea2a8b213762bde0ef9f21b5b4e17023"
   dependencies:
-    "@sk-types" "git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/types.git#main"
+    "@nft-types" "git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/types.git#main"
     ant-design-vue "^1.7.8"
     dayjs "^1.11.5"
     lodash "^4.17.21"

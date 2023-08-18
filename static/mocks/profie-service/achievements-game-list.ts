@@ -1,4 +1,4 @@
-import type { ProfileService } from "@sk-types"
+import type { ProfileService } from "@nft-types"
 
 const profileAchievementsGameList: ProfileService.ProfileAchievement[] = [
 	0, 1, 2, 3, 4, 5, 6, 7, 8, 9

@@ -54,7 +54,7 @@ import Vue from "vue"
 import { mapActions, mapGetters, mapMutations } from "vuex"
 
 // Types
-import type { GameService } from "@sk-types"
+import type { GameService } from "@nft-types"
 
 // Mocks
 import { gameTokens as loadingTokens } from "~/static/mocks"

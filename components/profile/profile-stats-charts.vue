@@ -19,7 +19,7 @@
 import Vue, { PropType } from "vue"
 
 // Types
-import type { ProfileService } from "@sk-types"
+import type { ProfileService } from "@nft-types"
 
 interface Chart {
 	percent: string
