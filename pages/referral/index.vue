@@ -3,7 +3,7 @@
 		<div class="referral__intro">
 			<p class="referral__title">Referral</p>
 			<p class="referral__description">
-				You can earn rebates by inviting gamers to minting on Skill Labs.
+				You can earn rebates by inviting gamers to minting on ....
 				<!--		Todo: Temporary hide privacy		-->
 				<nuxt-link to="/privacy" v-if="false">
 					Referral program details.

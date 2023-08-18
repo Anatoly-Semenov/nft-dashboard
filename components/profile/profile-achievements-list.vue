@@ -55,7 +55,7 @@ export default mixins(networkMixin).extend({
 				private: {
 					title: "No achievements available",
 					description:
-						"We couldn’t track any of your achievements, or we do not support your games yet. Please connect your game account(s), or email us at help@skillabs.io, if you think something has gone wrong."
+						"We couldn’t track any of your achievements, or we do not support your games yet. Please connect your game account(s), or email us at google@google.com, if you think something has gone wrong."
 				},
 				public: {
 					title: "This user has no achievements",

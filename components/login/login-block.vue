@@ -41,7 +41,7 @@ export default mixins(connectMixin).extend({
 	name: "login-block",
 	data() {
 		return {
-			title: "Connect to SkillLabs",
+			title: "Connect to .....",
 			description:
 				"By connecting your wallet, you agree to our terms of Service and our Privacy Policy.",
 			loadingIndex: null as number | null

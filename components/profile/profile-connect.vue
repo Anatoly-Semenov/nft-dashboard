@@ -89,7 +89,7 @@ export default mixins(connectMixin).extend({
 					action: () => this.auth.call(this, "steam", true)
 				},
 				join: {
-					header: "Join Skill Labs",
+					header: "Join ...",
 					description:
 						"Connect your accounts and get unique achievements. Share with your friends, play and enjoy the game world.",
 					button: "Connect to Metamask",

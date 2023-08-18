@@ -39,17 +39,17 @@ export default Vue.extend({
 			social: [
 				{
 					text: "Twitter",
-					link: "https://twitter.com/Skill_Labs_gg",
+					link: "https://twitter.com/.......",
 					icon: iconTwitter
 				},
 				{
 					text: "Discord",
-					link: "https://discord.com/invite/skilllabs",
+					link: "https://discord.com/invite/........",
 					icon: iconDiscord
 				},
 				{
 					text: "Telegram",
-					link: "https://t.me/skilllabs",
+					link: "https://t.me/.....",
 					icon: iconTelegram
 				}
 			]

@@ -120,7 +120,7 @@ export default Vue.extend({
 				success: {
 					icon: iconSuccess,
 					title: "Successfully sent",
-					description: `\nYour request has been successfully completed.\n Your wallet will receive 1 MATIC within \n\n **10 minutes**. Track the transaction by following\n this link: [Txn Hash ↗](${getTxLink()}) \n\n\n If something went wrong email us <help@skillabs.io>`,
+					description: `\nYour request has been successfully completed.\n Your wallet will receive 1 MATIC within \n\n **10 minutes**. Track the transaction by following\n this link: [Txn Hash ↗](${getTxLink()}) \n\n\n If something went wrong email us <google@google.com>`,
 					buttonText: "Ok",
 					action: emitCancel
 				},

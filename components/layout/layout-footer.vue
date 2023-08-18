@@ -18,7 +18,7 @@
 			</div>
 		</div>
 		<div class="layout__footer-completion">
-			<span>© 2022 SkillLabs</span>
+			<span>© 2022 google</span>
 			<nuxt-link to="/privacy"><span>Privacy Policу</span></nuxt-link>
 		</div>
 	</div>
@@ -52,22 +52,22 @@ export default Vue.extend({
 			social: [
 				{
 					text: "Discord",
-					link: "https://discord.com/invite/skilllabs",
+					link: "https://discord.com/invite/........",
 					icon: iconDiscord
 				},
 				{
 					text: "Twitter ",
-					link: "https://twitter.com/Skill_Labs_gg",
+					link: "https://twitter.com/.......",
 					icon: iconTwitter
 				},
 				{
 					text: "Telegram",
-					link: "https://t.me/skilllabs",
+					link: "https://t.me/.....",
 					icon: iconTelegram
 				},
 				{
 					text: "Medium",
-					link: "https://medium.com/@skilllabs",
+					link: "https://medium.com/.....",
 					icon: iconMedium
 				}
 			] as SocialItem[]

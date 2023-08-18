@@ -99,7 +99,7 @@ export default mixins(widthMixin).extend({
 			result: {
 				title: "You have no Invitees",
 				description:
-					"Share your personal link and get bonuses from Skill Labs. If you think something went wrong and the invitee did not count, please email us at help@skilllabs.io"
+					"Share your personal link and get bonuses from .... If you think something went wrong and the invitee did not count, please email us at help@google.com"
 			}
 		}
 	},

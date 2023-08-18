@@ -19,7 +19,7 @@ const config: NuxtConfig = {
 
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
-		titleTemplate: "Skill Labs %s",
+		titleTemplate: "nft service %s",
 		title: "",
 		htmlAttrs: {
 			lang: "en"

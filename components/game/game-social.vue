@@ -48,10 +48,10 @@ export default mixins(gameSocialMixin, widthMixin).extend({
 	name: "game-social",
 	methods: {
 		joinInvestor() {
-			this.$toLink("https://skilllabs.io/investor")
+			this.$toLink("https://google.com/investor")
 		},
 		joinScholar() {
-			this.$toLink("https://skilllabs.io/scholarship")
+			this.$toLink("https://google.com/scholarship")
 		}
 	},
 	computed: {

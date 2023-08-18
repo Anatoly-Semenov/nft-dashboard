@@ -1,5 +1,5 @@
 import { Plugin } from "@nuxt/types"
-import type { Estimation } from "@sk-types"
+import type { Estimation } from "@nft-types"
 
 // Dayjs
 import dayjs from "dayjs"

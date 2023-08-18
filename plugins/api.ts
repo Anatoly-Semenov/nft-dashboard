@@ -12,7 +12,7 @@ import {
 	RewardsService,
 	ReferralService,
 	AirdropMaticService
-} from "@sk-requests"
+} from "@nft-requests"
 
 // types
 import type { Plugin } from "@nuxt/types"

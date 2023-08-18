@@ -13,7 +13,7 @@
 				<p style="text-align: left">
 					<span style="font-size: 14px">
 						We collect personal information that you voluntarily provide to us
-						when you&nbsp;register on the&nbsp;https://skilllabs.io/ an interest
+						when you&nbsp;register on the&nbsp;https://google.com/ an interest
 						in obtaining information about us or our products and Services, when
 						you participate in activities on the Services, or otherwise when you
 						contact us. The personal information that we collect depends on the
@@ -484,7 +484,7 @@
 						been collected, we will deactivate the account and take reasonable
 						measures to promptly delete such data from our records. If you
 						become aware of any data we may have collected from children under
-						age 18, please contact us at&nbsp;privacy_skilllabs@skillguilds.com.
+						age 18, please contact us at&nbsp;privacy_google@google.com.
 					</span>
 				</p>
 				<br />
@@ -498,7 +498,7 @@
 						to request access to the personal information we collect from you,
 						change that information, or delete it in some circumstances. To
 						request to review, update, or delete your personal information,
-						please contact us at&nbsp;privacy_skilllabs@skillguilds.com.
+						please contact us at&nbsp;privacy_google@google.com.
 					</span>
 				</p>
 				<br />
@@ -560,7 +560,7 @@
 					</span>
 				</p>
 				<p style="text-align: left">
-					<span style="font-size: 14px">privacy_skilllabs@skillguilds.com</span>
+					<span style="font-size: 14px">privacy_google@google.com</span>
 				</p>
 			</div>
 		</div>

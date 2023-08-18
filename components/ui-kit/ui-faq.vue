@@ -23,12 +23,12 @@ export default Vue.extend({
 			default: () =>
 				[
 					{
-						title: "About Skill Labs",
+						title: "About ...",
 						description:
-							"Skill Labs is a company that seeks to empower gamers, guilds, and NFT owners by building tools for them. We want to bring transparency to NFT gaming and help gamers around the world to take ownership of their digital assets, including in-game items."
+							"... is a company that seeks to empower gamers, guilds, and NFT owners by building tools for them. We want to bring transparency to NFT gaming and help gamers around the world to take ownership of their digital assets, including in-game items."
 					},
 					{
-						title: "What are Skill Labs achievements?",
+						title: "What are ... achievements?",
 						description:
 							"An achievement is a claimable NFT that can be only claimed if you have achieved a certain amount of progress in a specific game. Eligibility is checked and confirmed on-chain."
 					},
@@ -62,7 +62,7 @@ export default Vue.extend({
 						title:
 							"I played other games, but there are no achievements for them. What should I do?",
 						description:
-							"We’re working hard to add an achievement system to more games. We would appreciate it if you could share what specific games you’re interested in on our form here: [https://dash.skilllabs.gg/profile](https://dash.skilllabs.gg/profile) (go to the bottom of the webpage)."
+							"We’re working hard to add an achievement system to more games. We would appreciate it if you could share what specific games you’re interested in on our form here: [https://dash.google.gg/profile](https://dash.google.gg/profile) (go to the bottom of the webpage)."
 					},
 					{
 						title:
@@ -74,18 +74,18 @@ export default Vue.extend({
 						title:
 							"I'm sure that I am eligible to claim, but the system isn’t allowing me to. What should I do?",
 						description:
-							"Please report in Skill Labs’ official Telegram or Discord channels by tagging a support manager, and we’ll fix it."
+							"Please report in ...’ official Telegram or Discord channels by tagging a support manager, and we’ll fix it."
 					},
 					{
 						title:
 							"What are the points in my profile? How do they accrue to my account?",
 						description:
-							"You receive points for earning achievements and for spending or claiming rewards from the games you play. The gamers with the most points receive bonus rewards from Skill Labs and partners."
+							"You receive points for earning achievements and for spending or claiming rewards from the games you play. The gamers with the most points receive bonus rewards from ... and partners."
 					},
 					{
 						title: "What is the level system in my profile? How do I level up?",
 						description:
-							"The level is based on the number of points you have accrued. The higher your level, the more benefits you can enjoy from Skill Labs and partners."
+							"The level is based on the number of points you have accrued. The higher your level, the more benefits you can enjoy from ... and partners."
 					}
 				] as PropOptions<UiFaqData>
 		}

@@ -30,7 +30,7 @@ export default Vue.extend({
 				{
 					subtitle: "Play activity",
 					description:
-						"Be active in games and connect your wallets to the Skill Labs platform"
+						"Be active in games and connect your wallets to the ... platform"
 				},
 				{
 					subtitle: "Claim achievements",
