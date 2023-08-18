@@ -1,0 +1,29 @@
+.profile-stats__charts
+	flex-center()
+	flex-direction column
+	min-width 232px
+	max-width 232px
+	height 100%
+	margin-right $gap-large
+
+	&-item
+		width 100%
+		display flex
+		justify-content flex-start
+		align-items center
+
+	&-progress
+		height 4px
+		background-color $color-error
+
+		&._earn
+			background-color $color-ui-hover
+
+	&-value
+		font-size 14px
+		font-weight $bold
+		margin-left $gap-small
+		color $color-text
+
+	&._loading &-progress, &._loading &-value
+		loading()

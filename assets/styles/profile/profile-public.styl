@@ -1,0 +1,87 @@
+.profile__public
+	display flex
+	flex-direction column
+
+	&-profile
+		display flex
+
+	&-avatar
+		border-radius $border-radius-circle
+		height 56px
+		width 56px
+
+	&-text
+		display flex
+		flex-direction column
+		justify-content flex-start
+		align-items flex-start
+		margin-left $gap
+
+	&-name
+		font-size 20px
+		font-weight $bold
+		line-height 28px
+
+	&-wallet
+		font-size 16px
+		color $color-text-third
+		margin-top $gap-small
+		transition color $transition
+
+		& svg
+			height 14px
+			width 14px
+			margin-right $gap-small
+
+		& path
+			fill $color-text-third
+			transition fill $transition
+
+		&:hover
+			color $color-ui
+
+			& path
+				fill $color-ui
+
+		&:active
+			color $color-ui-active
+
+			& path
+				fill $color-ui-active
+
+	&-stats
+		display flex
+		justify-content flex-start
+		align-items flex-start
+		margin-top $gap-big
+
+	&-stat
+		font-size 18px
+		color $color-text-secondary
+		position relative
+
+		& span
+			color $color-text
+			font-weight $bold
+
+		&:not(:first-child)
+			margin-left $gap
+			padding-left $gap
+
+			&:before
+				content ""
+				position absolute
+				left 0
+				top 46%
+				height 4px
+				width 4px
+				background-color $color-text-disabled
+
+	&._loading &-avatar, &._loading &-name, &._loading &-wallet, &._loading &-stat
+		loading()
+
+	&._loading &-stat:before
+		opacity 0
+
+	&._loading &-avatar
+		border-radius $border-radius-circle

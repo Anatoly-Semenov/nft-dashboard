@@ -1,0 +1,142 @@
+.ui-button
+	display flex
+	align-items center
+	justify-content center
+	height 40px
+	width fit-content
+	transition background-color $transition
+	padding 13px 15px
+	border none
+	text-shadow none
+	border-radius 0
+	font-weight $bold
+
+	&:hover
+		background-color $color-ui-hover
+
+	&.ant-btn
+		&.ant-btn-primary
+			transitionMixin(box-shadow, background-color, background, color)
+			background-color $color-ui
+			color $color-text-inversion
+			box-shadow none
+
+			& path
+				fill $color-text-inversion
+
+			&:focus
+				background-color $color-ui
+				border-color $color-ui
+
+			&:hover
+				background-color $color-ui-hover
+				border-color $color-ui-hover
+
+			&:active
+				background-color $color-ui-active
+				border-color $color-ui-active
+
+		&.ant-btn-default
+			color $color-text
+			background transparent
+			border-color $color-ui
+			transition color $transition
+
+			&:hover
+				color $color-ui
+				border-color $color-ui-hover
+
+		&.ant-btn-link
+			color $color-link
+			transition color $transition
+			background-color transparent
+
+			& path
+				fill $color-link
+				transition fill $transition
+
+			&:hover
+				color $color-link-hover
+
+				& path
+					fill $color-link-hover
+
+		&.ant-btn-danger
+			background-color $color-error
+
+			&:hover
+				background-color $color-error-hover
+
+			&:active
+				background-color $color-error-active
+
+	& svg
+		margin-right $gap-small
+
+	&._small
+		height 32px
+		min-width 88px
+		padding 6px
+
+		& span
+			font-size 12px
+
+	&._middle
+		min-width 125px
+		height 40px
+		padding $gap-small $gap
+
+		& span
+			font-size 18px
+
+	&._large
+		min-width 135px
+		height 56px
+		padding 14px $gap
+
+		& span
+			font-size 20px
+
+	&.ant-btn.ant-btn-primary
+		&._highlight
+			background-color $color-highlight
+			color $color-text-secondary
+
+		&._gradient
+			background $gradient-ui
+			box-shadow $box-shadow-ui
+
+			&:hover
+				background $color-ui
+				box-shadow $box-shadow-ui-hover
+
+		&._gradient._highlight
+			background $gradient-highlight
+			box-shadow $box-shadow-highlight
+
+			&:hover
+				background $color-highlight
+				box-shadow $box-shadow-highlight-hover
+
+			&:active
+				color $color-highlight-active
+
+		&._unauthorized, &._unauthorized._highlight, &._unauthorized._gradient, &._unauthorized:hover, &._unauthorized._highlight:hover, &._unauthorized._gradient:hover
+			background transparent
+			border $border
+			color $color-border
+			box-shadow none
+
+		&._unauthorized._gradient
+			background linear-gradient(110.36deg, rgba(45, 48, 80, 0.3) 8.46%, rgba(45, 48, 80, 0.009375) 55.65%)
+
+
+	&._secondary.ant-btn.ant-btn-primary
+		background-color $color-background-third
+		color $color-text
+
+		&:hover
+			color $color-ui
+
+		&:active
+			color $color-ui-active

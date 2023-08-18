@@ -1,0 +1,213 @@
+.profile
+	width 100%
+	display flex
+	flex-direction column
+
+	& > .ui-breadcrumb
+		margin-bottom $gap-big
+
+	&__main
+		display flex
+		flex-direction column
+		justify-content space-between
+		align-items flex-start
+		max-width 650px
+		width 100%
+
+		& > *:not(:first-child)
+			margin-top $gap-big
+
+		&-buttons
+			display flex
+			width 100%
+			margin-top $gap
+
+			& .ui-button
+				height 40px
+				width 100%
+
+				& span
+					font-size 18px
+
+				&:not(:last-child)
+					margin-right $gap-small
+
+			& &-edit.ui-button.ant-btn.ant-btn-primary
+				min-width 40px
+				max-width 40px
+				background-color $color-background-third
+
+				& svg
+					margin 0
+
+				& path
+					fill $color-text
+
+				&:hover
+					background-color $color-background-secondary
+
+	&__user
+		width 100%
+		display flex
+
+		&-text
+			display flex
+			flex-direction column
+			margin-left $gap
+
+		&-name
+			font-size 24px
+			font-weight $bold
+			color $color-text
+			max-width 180px
+			text-overflow()
+
+	// Todo: Temporary selector
+	&__user &__main-buttons
+		justify-content flex-end
+		margin-top 0
+
+	&__social
+		display flex
+		margin-top $gap
+		width 100%
+
+		& .ui-connect
+			min-width 50%
+			max-width 50%
+
+			&:not(:last-child)
+				margin-right $gap-small
+
+	&__points
+		display flex
+		flex-wrap wrap
+		row-gap $gap-small
+		width 100%
+
+		&-item
+			display flex
+			justify-content flex-start
+			align-items flex-start
+			flex-direction column
+			color $color-text
+			width 29%
+
+			&:not(:last-child)
+				margin-right 18px
+				padding-right 18px
+
+			&-name
+				color $color-text
+				font-size 14px
+
+			&-value
+				display flex
+				justify-content flex-start
+				align-items center
+				font-size 16px
+				font-weight $bold
+				margin-top 6px
+
+				& svg
+					margin-right $gap-extra-small
+					height 16px
+					width 16px
+
+					& path
+						fill $color-text
+
+			&._highlight path
+				fill $color-ui
+
+	&__content
+		width 100%
+		display flex
+		justify-content space-between
+		align-items flex-start
+
+	&__container
+		position relative
+		max-width 800px
+		display flex
+		flex-direction column
+
+		& .ant-tabs-nav-scroll
+			position relative
+			z-index 1
+			display flex
+			justify-content flex-end
+			// TODO: temporary hide tabs display
+			opacity 0
+			pointer-events none
+
+		& .ui-alert
+			margin-bottom $gap-large
+
+			& .ant-alert-icon
+				margin-top -4px
+
+	&__title
+		font-size 24px
+		font-weight $bold
+		color $color-text
+		width fit-content
+
+		&._tabs
+			position relative
+			margin-bottom -36px
+			margin-top 36px
+			z-index 2
+
+	&__subtitle
+		font-size 40px
+		font-weight $bold
+		color $color-text
+		margin-bottom $gap
+
+	&__share
+		display flex
+		flex-direction column
+		align-items flex-start
+		justify-content flex-start
+		max-width 650px
+
+		&-title
+			font-size 18px
+			font-weight $bold
+			line-height $line-height
+			color $color-text
+
+		&-main
+			width 100%
+			display flex
+			margin-top $gap-small
+
+		&-link
+			display flex
+			align-items center
+			justify-content flex-start
+			height 40px
+			width 100%
+			border $border
+			font-size 16px
+			text-align left
+			padding 0 12px
+
+		&-button
+			flex-center()
+			height 40px
+			min-width 40px
+			max-width 40px
+			background-color $color-highlight
+			transition background-color $transition
+			margin-left $gap-small
+
+			&:hover
+				background-color $color-highlight-hover
+
+			&:active
+				background-color $color-highlight-active
+
+	&__main._loading &__points-item, &__main._loading &__user-name, &__main._loading .ui-button, &__main._loading .ui-connect
+		loading()

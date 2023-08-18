@@ -1,0 +1,61 @@
+.profile-airdrop__modal
+	&-container
+		flex-center()
+		flex-direction column
+		padding $gap-extra-large
+		background-color $color-background-secondary
+		border $border
+		width 435px
+
+	&-icon
+		height 48px
+		width 48px
+
+	&-title, &-description
+		text-align center
+		color $color-text
+
+	&-title
+		margin-top $gap-big
+		font-size 28px
+		font-weight $bold
+
+	&-description
+		margin-top $gap
+
+		&, & p, & a
+			font-size 16px
+			line-height 23px
+
+		& a
+			color $color-ui
+			transition color $transition
+
+			&:hover
+				color $color-ui-hover
+
+			&:active
+				color $color-ui-active
+
+	& .ui-input
+		margin-top $gap
+		width 100%
+		border 1px solid $color-border-light
+
+		& input
+			height 34px
+
+	& .ui-button
+		margin-top $gap-big
+		width 100%
+		height 56px
+		font-size 20px
+
+	//&._start &-icon path
+	//	fill
+
+	&._success &-icon path
+		fill $color-success
+
+	&._error &-icon path
+		fill $color-error

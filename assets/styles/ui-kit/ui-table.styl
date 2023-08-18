@@ -1,0 +1,187 @@
+.ui-table
+	width 100%
+
+	& *
+		font-size 18px
+		font-weight $regular
+
+	& .ui-delta
+		font-size 12px
+
+	& .ant-table
+		& table
+			border-spacing 0
+
+		&-thead > tr > th
+			font-weight $regular
+			font-size 18px
+			line-height 19px
+			background-color $color-background-secondary
+			color $color-text
+			border none
+
+			&:hover, &.ant-table-column-has-actions.ant-table-column-has-sorters:hover
+				background-color $color-background-secondary
+
+		& div.ant-table-body-outer div.ant-table-body-inner table.ant-table-fixed tbody.ant-table-tbody td.ant-table-row-cell-break-word
+			background-color transparent
+			border-top-right-radius 0
+			border-bottom-right-radius 0
+
+		& thead.ant-table-thead>tr:first-child>th:last-child
+			border-top-right-radius $border-radius-big
+
+		& thead.ant-table-thead>tr:first-child>th:first-child, & .ant-table-fixed-left
+			border-top-left-radius $border-radius-big
+
+		& thead.ant-table-thead tr th.ant-table-row-cell-break-word
+			background-color $color-background-secondary
+			padding $gap-small
+
+			&:last-child
+				padding-right 27px
+
+		&-fixed
+			background transparent
+
+		&-body
+			overflow-x auto !important // Reset ant-design tag styles
+			padding-bottom $gap-small
+			custom-scrollbar()
+
+		&-tbody
+			& tr:last-child td:first-child
+				border-bottom-left-radius 19px
+
+			& tr:last-child td:last-child
+				border-bottom-right-radius 19px
+
+			& > tr
+				height 72px !important
+				min-height 72px
+				max-height 72px
+				background-color $color-background
+				transition background-color $transition
+
+				&:first-child
+					border-top-left-radius 20px
+
+				&.ant-table-row:hover
+					background-color $color-background-secondary
+
+					& > td
+						background-color $color-background-secondary
+
+				& > td
+					min-width 100px
+
+			& > tr:not(:last-child) > td
+				border-bottom 1px solid $color-border
+
+			& > tr:last-child > td
+				border-bottom none
+
+		& tbody.ant-table-tbody tr.ant-table-row td
+			background transparent
+
+		& tbody tr td:first-child
+			border-left $border
+
+		& tbody tr td:last-child:not(:first-child)
+			border-right $border
+
+		& tbody tr:last-child td
+			border-bottom $border
+
+		&-placeholder
+			background-color transparent
+			border-color $color-border
+
+		&-row-cell-break-word
+			background-color $color-background
+
+		&-column-sorter
+			max-width 10px
+
+		& .ant-table-thead>tr>th .ant-table-column-sorter .ant-table-column-sorter-inner .ant-table-column-sorter-down.on, .ant-table-thead>tr>th .ant-table-column-sorter .ant-table-column-sorter-inner .ant-table-column-sorter-up.on
+			color $color-link-hover
+
+	& .ant-table-row.ant-table-row-level-0.ant-table-row-hover
+		background-color $color-background-secondary
+
+	& .ant-pagination-item
+		background-color transparent
+		opacity .6
+		border none
+		transition opacity $transition
+
+		&:hover
+			opacity 1
+
+		& a
+			color $color-text
+			font-size 14px
+
+	& .ant-pagination-item-active, & .ant-pagination-item-link
+		background-color transparent
+		border $border
+		border-radius $border-radius-big
+
+	& .ant-pagination-item-link
+		color $color-text
+
+	& .ant-pagination-item-active
+		opacity 1
+
+	& .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis, & .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis, & .anticon.anticon-double-right.ant-pagination-item-link-icon, & .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-link-icon
+		color $color-text
+
+	& .ant-empty
+		opacity .7
+
+	& .ant-pagination.ant-table-pagination
+		margin $gap 0
+
+	&__fullscreen
+		flex-center()
+		width 110px
+		height 36px
+		background none
+		border 1px solid $color-ui
+		color $color-ui
+		font-size 12px
+		border-radius $border-radius-big
+		transition background-color $transition
+
+		& i
+			font-size 16px
+
+		& svg
+			margin-right $gap-small
+
+		&:hover
+			background-color #aadc571f
+
+	& .ant-table-column-has-actions.ant-table-column-has-sorters
+		transition opacity $transition
+
+	&._loading thead tr th, &._loading .ant-table-column-has-actions.ant-table-column-has-sorters
+		opacity .7
+		pointer-events none
+		cursor no-drop
+
+	& .ant-table .ant-table-fixed-left thead.ant-table-thead tr th.ant-table-row-cell-break-word:last-child, & .ant-table .ant-table-fixed-left .ant-table-fixed .ant-table-row.ant-table-row-level-0
+		background-color transparent
+
+	&._withoutHeaderBackground
+		& .ant-table thead.ant-table-thead tr th.ant-table-row-cell-break-word, & .ant-table-thead > tr > th
+			background-color transparent
+
+		& tbody tr:first-child td
+			border-top $border
+
+			&:first-child
+				border-top-left-radius $border-radius-big
+
+			&:last-child
+				border-top-right-radius $border-radius-big

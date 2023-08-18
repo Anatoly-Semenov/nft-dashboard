@@ -1,0 +1,25 @@
+.layout__social
+	display flex
+	flex-direction column
+	justify-content flex-start
+	align-items flex-start
+	margin 80px 0
+
+	&-title
+		font-size 24px
+		color $color-text
+		margin-bottom 6px
+
+	&-subtitle
+		font-size 18px
+		color $color-text-third
+
+	&-buttons
+		display flex
+		justify-content flex-start
+		align-items center
+		margin-top $gap-big
+
+		& > .ui-button:not(:first-child)
+			margin-left $gap-big
+

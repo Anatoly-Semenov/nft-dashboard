@@ -1,0 +1,56 @@
+.login__block
+	display flex
+	flex-direction column
+	justify-content flex-start
+	align-items flex-start
+	width 416px
+	background-color $color-background-secondary
+	border $border
+	border-radius $border-radius
+	padding $gap-extra-large
+	position relative
+
+	&-title
+		font-size 28px
+		font-weight $bold
+
+	&-description
+		font-size 16px
+		font-weight $regular
+		margin-top $gap
+
+	&-buttons
+		display flex
+		flex-direction column
+		width 100%
+		margin-top $gap-big
+
+	&-button
+		display flex
+		justify-content space-between
+		align-items center
+		width 100%
+		height 60px
+		background-color $color-background-third
+		padding $gap $gap-big
+		color $color-text
+		font-weight $bold
+		font-size 20px
+		transition background-color $transition
+
+		&._loading
+			loading()
+			color $color-text
+			opacity 1
+
+		&:not(:first-child)
+			margin-top $gap-small
+
+		&:hover:not(:disabled)
+			background-color $color-loading
+
+		& img
+			height 24px
+			width 24px
+			object-fit cover
+

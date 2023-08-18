@@ -1,0 +1,91 @@
+.airdrop
+	&, &__data, &__data-container &__info-item
+		display flex
+		flex-direction column
+		justify-content flex-start
+		align-items flex-start
+
+	&__container
+		width 100%
+		display flex
+		margin-top $gap-big
+
+	& .nft__reward
+		margin-right $gap-big
+		min-width 323px
+		max-width 323px
+
+	&__date
+		flex-center()
+		text-align center
+		height 55px
+		width 100%
+		background-color $color-background
+		font-size 18px
+		color $color-text
+		margin-top 5px
+
+	&__data
+		width 100%
+
+		&-container
+			width 600px
+
+		& .nft-faq
+			margin-bottom 60px
+
+	&__title
+		font-size 30px
+		font-weight $bold
+
+	&__subtitle
+		font-size 20px
+		color $color-text-third
+		margin-top 5px
+
+	&__description
+		font-size 14px
+		color $color-text-third
+		margin-top $gap-big
+
+	&__intro
+		display flex
+		flex-direction column
+		justify-content flex-start
+		margin-top 50px
+		transition opacity $transition
+
+		&-title
+			font-size 24px
+			font-weight $bold
+			color $color-text
+
+		&-subtitle
+			font-size 18px
+			margin-top 5px
+			color $color-text-third
+
+	&._loading &__title, &._loading &__date, &._loading &__subtitle, &._loading &__description
+		loading()
+
+	&._loading &__img
+		margin-right $gap-big
+
+	&._loading &__title
+		width 200px
+
+	&._loading &__date
+		width 65px
+		height 20px
+
+	&._loading &__subtitle
+		width 450px
+
+	&._loading &__description
+		height 65px
+
+	&._loading &__intro, &._loading .nft__connect
+		opacity .7
+		pointer-events none
+		user-select none
+

@@ -1,0 +1,27 @@
+.profile__wallet
+	border $border
+
+	&-container
+		flex-center()
+		flex-direction column
+		padding $gap-big
+
+	&-title, &-description
+		text-align center
+
+	&-title
+		font-size 28px
+		font-weight $bold
+		margin-top $gap-big
+
+	&-description
+		font-size 16px
+		color $color-text-third
+		margin-top $gap
+
+	&-icon, &-icon svg
+		width 64px
+		height 64px
+
+		&._error path
+			fill $color-error

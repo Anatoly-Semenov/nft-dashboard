@@ -1,0 +1,47 @@
+version: "3"
+services:
+  nft-ui-prod:
+    container_name: nft-ui-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - nft-network
+    environment:
+      NUXT_HOST: 0.0.0.0
+      NUXT_PORT: 3001
+      BASE_API_URL:
+      ACHIEVEMENT_CONTRACT_ADDRESS:
+      NETWORK_VERSION:
+      AMPLITUDE_KEY:
+      WEB3_PROVIDER:
+      WEB3_PROVIDER_SOCKET:
+      LANDING_PAGE_LINK:
+    ports:
+      - 3001:3001
+
+  nft-ui-dev:
+    container_name: nft-ui-dev
+    build:
+      context: .
+      dockerfile: Dockerfile-dev
+    volumes:
+      - ".:/usr/src/app"
+    networks:
+      - nft-network
+    environment:
+      NUXT_HOST:
+      NUXT_PORT:
+      BASE_API_URL:
+      ACHIEVEMENT_CONTRACT_ADDRESS:
+      NETWORK_VERSION:
+      AMPLITUDE_KEY:
+      WEB3_PROVIDER:
+      WEB3_PROVIDER_SOCKET:
+      LANDING_PAGE_LINK:
+    ports:
+      - 2000:2000
+
+networks:
+  nft-network:
+    external: true

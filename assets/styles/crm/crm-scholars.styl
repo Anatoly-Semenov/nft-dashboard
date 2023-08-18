@@ -1,0 +1,67 @@
+.crm__scholars
+	margin-top 50px
+
+	&._table
+		margin-top 0
+
+	&._pagination
+		margin-bottom -70px
+
+	& .ant-table
+		&-column-title
+			color $color-text-third
+			font-size 18px
+
+		& thead th
+			padding-bottom 22px
+
+	&-address
+		color $color-text
+		display flex
+		justify-content center
+		align-items center
+		transition color $transition
+
+		& > span
+			width 120px
+			text-overflow()
+
+		& path
+			transition fill $transition
+
+		&:hover
+			color $color-link
+
+			& path
+				fill $color-link
+
+	&-coin
+		display flex
+		justify-content center
+		align-items center
+		flex-wrap wrap
+
+		& .ui-delta
+			margin-left 5px
+
+	&-token
+		color $color-text-third
+		font-size 14px
+
+	& .ant-table-column-title
+		padding-right 6px
+
+	& .ui-table._loading
+		& tbody td > *
+			loading()
+			text-shadow none
+
+			&, & > span
+				color transparent
+
+			& path
+				fill transparent
+
+		& .ant-table-column-title
+			width 200px
+			loading()

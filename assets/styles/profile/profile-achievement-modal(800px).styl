@@ -1,0 +1,35 @@
+@media screen and (max-width: 800px)
+	.profile-achievement-modal
+		& .ant-modal
+			&-body, &-content, &.dialog
+				height 100%
+
+			&-body
+				padding 0
+
+			&.dialog
+				max-width 100%
+				width 100% !important
+				margin 0
+				padding 0
+
+		& .ant-modal-close-x, &._list .ant-modal-close-x
+			margin-top 0
+			margin-right 0
+
+		&__container
+			height 100%
+			width 100%
+
+		&._list &__list
+			max-height calc(100vh - 270px)
+
+		&._list .ant-modal-content
+			max-width 100%
+
+		&._list &__container
+			padding 0 $gap
+
+		&._list &__buttons .ui-button
+			height 45px
+			margin-top $gap

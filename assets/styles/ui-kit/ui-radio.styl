@@ -1,0 +1,48 @@
+.ui-radio
+	font-size 15px
+
+	& .ant-radio-button-wrapper
+		padding 6px 15px
+		height 32px
+		border 0
+		margin-right 3px
+		background $color-background-third
+		border-radius $border-radius
+		color $color-text-third
+		font-size 14px
+		font-weight $bold
+
+		& > span
+			display flex
+			align-items center
+
+		&:hover
+			color $color-text-third
+
+		&::before
+			display none
+
+		&:focus-within
+			outline none
+
+	&.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)
+		background $color-ui
+		color $color-background
+
+		&:focus-within
+			outline none
+
+	&._highlight.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)
+		background $color-highlight
+		color $color-text
+
+	&._loading .ant-radio-button-wrapper, &._loading .ant-radio-button-wrapper.ant-radio-button-wrapper-checked
+		loading()
+
+	&._loadingData
+		cursor wait
+
+		& .ant-radio-button-wrapper
+			pointer-events none
+
+

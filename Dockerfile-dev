@@ -1,0 +1,20 @@
+FROM node:12-alpine
+
+RUN apk add git
+
+# Create and define the node_modules's cache directory.
+RUN mkdir /app_cache
+WORKDIR /app_cache
+
+# Install the application's dependencies into the node_modules's cache directory.
+COPY ./package.json ./
+COPY ./yarn.lock ./
+RUN yarn
+
+# Define the application's working directory.
+WORKDIR /usr/src/app
+
+COPY ./docker-entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
+ENTRYPOINT ["docker-entrypoint.sh"]

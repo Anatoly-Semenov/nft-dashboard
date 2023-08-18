@@ -1,0 +1,28 @@
+.referral
+	&, &__intro
+		display flex
+		flex-direction column
+		justify-content flex-start
+		align-items flex-start
+
+	&__title, &__description
+		color $color-text
+
+	&__title
+		font-size 28px
+		font-weight $bold
+
+	&__description
+		font-size 14px
+		margin-top $gap-small
+
+		& a
+			color $color-ui
+			transition color $transition
+			text-decoration underline
+
+			&:hover
+				color $color-ui-hover
+
+			&:active
+				color $color-ui-active

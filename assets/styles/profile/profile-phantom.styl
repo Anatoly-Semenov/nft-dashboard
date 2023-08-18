@@ -1,0 +1,40 @@
+.profile__phantom
+	border $border
+	border-radius $border-radius-middle
+	padding $gap-big $gap-large
+	margin-top $gap
+	position relative
+	max-width 650px
+
+	& > *:not(&-background)
+		position relative
+		z-index 2
+
+	&-background
+		position absolute
+		top 0
+		right 0
+		height 100%
+		width 100%
+		object-fit cover
+		z-index 1
+
+	&-title
+		color $color-text
+		font-weight $bold
+		font-size 24px
+		line-height 28px
+		margin-bottom $gap-small
+
+	&-description
+		width 220px
+		color $color-text-third
+		font-size 16px
+		line-height $line-height
+
+	&-button
+		width 100%
+		margin-top $gap
+		max-width 400px
+
+

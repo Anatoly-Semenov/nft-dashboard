@@ -1,0 +1,95 @@
+.crm
+	display flex
+	flex-direction column
+
+	&__title
+		font-size 42px
+		font-weight $bold
+		color $color-text
+
+	&__subtitle
+		font-size 20px
+		margin-top -6px
+		color $color-text-third
+
+	& .ui-connect
+		height 44px
+		width 150px
+		border-radius 30px
+		margin-top $gap-big
+
+	&__games
+		display flex
+		justify-content flex-start
+		align-items center
+		margin-top $gap-big
+		margin-bottom 80px
+
+	&__game
+		display flex
+		flex-direction column
+		justify-content center
+		align-items center
+		width 115px
+		transition opacity $transition
+
+		&:not(:first-child)
+			margin-left 26px
+
+		&-img
+			height 115px
+			border-radius $border-radius
+			border $border
+			transitionMixin(box-shadow, border-color)
+			background-color $color-background
+			padding $gap
+			pointer-events none
+
+			&, & img
+				width 100%
+
+		&-name
+			font-size 14px
+			color $color-text
+			transition color $transition
+			margin-top $gap-small
+
+		&._active &-img
+			border-color $color-ui
+			box-shadow $box-shadow-ui
+
+		&._active &-name
+			color $color-ui
+
+		&._disabled
+			cursor wait
+
+		&._disabled._active
+			opacity 1
+			cursor pointer
+
+		&:hover:not(._disabled) &-img
+			border-color $color-ui
+
+		&:hover:not(._disabled) &-name
+			color $color-ui
+
+		&:active:not(._disabled) &-img
+			border-color $color-ui-active
+
+		&:active:not(._disabled) &-name
+			color $color-ui-active
+
+	&__games._loading &__game
+		&-img, &-name
+			loading()
+
+		&-img img
+			opacity 0
+
+		&-img
+			border 1px solid #4d528b
+			box-shadow none
+
+	& .ui-table__fullscreen
+		margin-top $gap-big

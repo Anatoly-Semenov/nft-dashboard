@@ -1,0 +1,81 @@
+.profile__edit
+	&-title
+		font-size 24px
+		font-weight $bold
+		color $color-text
+		margin-top $gap-big
+		margin-bottom $gap
+
+	&-subtitle
+		font-size 20px
+		color $color-text
+
+	&-description
+		font-size 14px
+		color $color-text-third
+		margin-top $gap-small
+
+	&-block
+		display flex
+		flex-direction column
+		padding $gap-big
+		border $border
+		border-radius $border-radius
+		background-color $color-background-secondary
+
+		&:not(:last-child)
+			margin-bottom $gap
+
+	&-row
+		width 100%
+		display flex
+		flex-wrap wrap
+		row-gap $gap
+		column-gap $gap
+		margin-top $gap
+
+	&-wallets
+		margin $gap 0
+		display flex
+		flex-direction column
+		max-width 800px
+
+	&-wallet
+		display flex
+		flex-direction column
+		padding $gap
+		background-color $color-background-third
+
+		&-row
+			display flex
+			justify-content flex-start
+			align-items center
+
+			&:not(:first-child)
+				margin-top $gap
+
+			& > *:not(:last-child)
+				margin-right $gap
+
+			& .ui-tag._light
+				color $color-text-inversion
+
+		&-title
+			font-size 16px
+			font-weight $bold
+			color $color-text
+
+		&:not(:first-child)
+			margin-top $gap
+
+		& .ui-input
+			width 70%
+
+			& .ant-input.ant-input-disabled
+				background-color $color-background
+				color $color-text
+				border $border
+				cursor text
+
+	& .profile__invite
+		margin-top 95px

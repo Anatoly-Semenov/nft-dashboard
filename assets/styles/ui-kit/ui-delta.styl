@@ -1,0 +1,27 @@
+.ui-delta
+	display flex
+	justify-content flex-start
+	align-items center
+	font-size 12px
+	color $color-ui
+
+	& i
+		margin-right 7px
+
+	& path
+		fill $color-ui
+
+	&._negative
+		color $color-error
+
+		& svg
+			transform rotate(180deg)
+
+		& path
+			fill $color-error
+
+	&._zero
+		color $color-text
+
+		& path
+			fill $color-text

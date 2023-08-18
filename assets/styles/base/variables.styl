@@ -1,0 +1,135 @@
+// Переменные цветовой-палитры STYLUS
+$color-ui = var(--color-ui)
+$color-ui-hover = var(--color-ui-hover)
+$color-ui-active = var(--color-ui-active)
+$color-ui-shadow = var(--color-ui-shadow)
+$color-highlight = var(--color-highlight)
+$color-highlight-hover = var(--color-highlight-hover)
+$color-highlight-active = var(--color-highlight-active)
+$color-highlight-shadow = var(--color-highlight-shadow)
+$color-link = var(--color-link)
+$color-link-hover = var(--color-link-hover)
+$color-link-active = var(--color-link-active)
+$color-text = var(--color-text)
+$color-text-secondary = var(--color-text-secondary)
+$color-text-third = var(--color-text-third)
+$color-text-inversion = var(--color-text-inversion)
+$color-text-disabled = var(--color-text-disabled)
+$color-border = var(--color-border)
+$color-border-light = var(--color-border-light)
+$color-border-hover = var(--color-border-hover)
+$color-border-third = var(--color-border-third)
+$color-loading = var(--color-loading)
+$color-loading-secondary = var(--color-loading-secondary)
+$color-background = var(--color-background)
+$color-background-secondary = var(--color-background-secondary)
+$color-background-third = var(--color-background-third)
+$color-background-disabled = var(--color-background-disabled)
+$color-background-dark = var(--color-background-dark)
+$color-background-inversion = var(--color-background-inversion)
+$color-warning = var(--color-warning)
+$color-warning-hover = var(--color-warning-hover)
+$color-warning-active = var(--color-warning-active)
+$color-error = var(--color-error)
+$color-error-hover = var(--color-error-hover)
+$color-error-active = var(--color-error-active)
+$color-success = var(--color-success)
+$color-gold = var(--color-gold)
+$color-silver = var(--color-silver)
+$color-bronze = var(--color-bronze)
+
+// тени
+$box-shadow = 0px 12px 24px rgba(0, 0, 0, 0.06)
+$box-shadow-ui = 0px 12px 25px $color-ui-shadow
+$box-shadow-ui-hover = 0px 5px 10px $color-ui-shadow
+$box-shadow-highlight = 0px 12px 25px $color-highlight-shadow
+$box-shadow-highlight-hover = 0px 5px 10px $color-highlight-shadow
+
+// Градиенты
+$gradient-ui = linear-gradient(110.36deg, rgba(250, 255, 242, 0.2) 8.46%, rgba(247, 241, 255, 0.00625) 55.65%), $color-ui
+$gradient-highlight = linear-gradient(110.36deg, rgba(250, 255, 242, 0.2) 8.46%, rgba(247, 241, 255, 0.00625) 55.65%), $color-highlight
+
+// Закругления
+$border-radius = 4px
+$border-radius-middle = 6px
+$border-radius-big = 8px
+$border-radius-circle = 1000px
+
+// Обводка
+$border = 1px solid $color-border
+
+// Отступы
+$gap-extra-small = 4px
+$gap-small = 8px
+$gap = 16px
+$gap-big = 24px
+$gap-large = 32px
+$gap-extra-large = 48px
+
+// Шрифты
+$font-text = "SF Pro Display"
+
+// Начертания
+$regular = 400
+$bold = 900
+
+// Переходы
+$transition-duration = 0.4s
+$transition = $transition-duration ease
+
+// Высота строки
+$line-height = 24px
+$line-height-small = 17px
+
+// Непрозрачность
+$opacity-hover = .7
+
+// Animations
+$animation-heart = heart 6s infinite linear
+
+// Переменные цветовой-палитры CSS
+:root
+	--color-ui #BFF800
+	--color-ui-hover #D8FA66
+	--color-ui-active #98C600
+	--color-ui-shadow #BFF80033
+	--color-highlight #4007FF
+	--color-highlight-hover #6638FF
+	--color-highlight-active #3305CC
+	--color-highlight-shadow #4007FF33
+	--color-highlight-chart-shadow #190E40
+	// Todo: Наследует $color-ui
+	--color-link var(--color-ui)
+	--color-link-hover var(--color-ui-hover)
+	--color-link-active var(--color-ui-active)
+	--color-text #F7F7F7
+	--color-text-secondary #F2F2F2
+	--color-text-third #DFDFDF
+	--color-text-inversion #262626
+	--color-text-disabled #7A7A7A
+	--color-border #262626
+	--color-border-hover #333333
+	--color-border-third #4D4D4D
+	--color-border-light #4D4D4D
+	--color-loading #666666
+	--color-loading-secondary #a6a6a649
+	--color-background #0F0F0F
+	--color-background-secondary #262626
+	--color-background-third #333333
+	--color-background-disabled #B2B2B2
+	--color-background-dark #000000
+	--color-background-inversion #FFFFFF
+	--color-warning #F2C94C
+	--color-warning-hover #F7D97E
+	--color-warning-active #F2BD1B
+	--color-warning-chart-shadow #473D1E
+	--color-error #EB5757
+	--color-error-hover #EB8686
+	--color-error-active #DE3131
+	--color-error-chart-shadow #3D1717
+	--color-success #50D1AA
+	--color-gold #F2C94C
+	--color-silver #B2B2B2
+	--color-bronze #FF9146
+	// Ant Design
+	--antd-wave-shadow-color var(--color-ui)

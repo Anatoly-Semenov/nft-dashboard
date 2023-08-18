@@ -1,0 +1,29 @@
+.ui-breadcrumb
+	display flex
+	justify-content flex-start
+	align-items flex-start
+	transition opacity $transition
+
+	& .ant-breadcrumb
+		line-height 17px
+
+		&-link, & button
+			color $color-text-disabled
+			font-weight $bold
+			font-size 12px
+			line-height 11px
+			transition color $transition
+
+			&:hover
+				color $color-link-hover
+
+		& > span:last-child .ant-breadcrumb-link button
+			color $color-text
+			cursor default
+
+		&-separator
+			margin 0 10px
+			color $color-text-disabled
+
+	&._loading
+		opacity .7

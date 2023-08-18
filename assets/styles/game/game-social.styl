@@ -1,0 +1,62 @@
+.game__social
+	padding $gap-big $gap-large
+	background-color $color-background
+	border $border
+	border-radius $border-radius
+
+	&, &-buttons
+		width 100%
+		flex-center()
+		flex-direction column
+
+	&-site, &-link, &-join, &-apply, &-mobile
+		background-color $color-background-third
+		height 40px
+		flex-center()
+		transition opacity $transition
+
+		&:hover
+			opacity .8
+
+	&-site, &-join, &-scholar
+		text-align center
+		width 100%
+		color $color-text
+		font-size 18px
+		font-weight $bold
+
+		&:hover
+			color $color-text
+
+	&-links
+		width 100%
+		display flex
+		flex-wrap wrap
+		row-gap $gap-small
+		column-gap $gap-small
+		margin-top $gap
+
+	&-link
+		width 47px
+
+	&-buttons:not(:first-child)
+		margin-top $gap-large
+
+	&-scholar
+		color $color-ui
+		background-color transparent
+		margin-top $gap
+		transition color $transition
+
+		&:hover
+			color $color-ui-hover
+
+		&:active
+			color $color-ui-active
+
+	&-mobile
+		width 40px
+		margin-left auto
+
+	&._loading &-join, &._loading &-site, &._loading &-link
+		loading()

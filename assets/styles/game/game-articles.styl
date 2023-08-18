@@ -1,0 +1,64 @@
+.game__articles
+	margin-top $gap-big
+
+	&-item
+		display flex
+		flex-direction column
+		padding 60px 130px
+		border-radius $border-radius
+		background-color $color-background-inversion
+		margin-top $gap-big
+		border $border
+		white-space pre-line
+
+	& *
+		color #292929
+		font-family "Georgia"
+		font-weight $bold
+		font-size 18px
+		margin-top 5px
+
+	& > div > *:not(p)
+		margin-top 20px
+
+	& h1, h2, h3, h4, h5, strong
+		font-family "Helvetica"
+		font-weight $bold
+		margin-top $gap
+
+	& h1
+		font-size 32px
+
+	& h2
+		font-size 20px
+
+	& h3
+		font-size 18px
+
+	& p
+		line-height 32px
+
+	&-title
+		margin-bottom $gap-small
+		font-size 40px
+		font-weight $bold
+		white-space unset
+
+	& h1&-title
+		margin-top 0
+
+	& img
+		width auto
+		border-radius 12px
+		max-height 300px
+		max-width 100%
+		margin 20px 0
+
+	& a
+		color $color-highlight
+
+		&:hover
+			color $color-highlight-hover
+
+	& ol
+		margin-left 14px

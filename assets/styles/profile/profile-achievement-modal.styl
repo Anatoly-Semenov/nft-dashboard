@@ -1,0 +1,173 @@
+.profile-achievement-modal
+	&__container
+		background-color $color-background-secondary
+		border 1px solid $color-border-hover
+		border-radius 1px
+		width 420px
+		min-height 460px
+		padding $gap-large $gap-extra-large
+		position relative
+
+	&__container, &__intro
+		flex-center()
+		flex-direction column
+
+	&__list
+		display flex
+		flex-wrap wrap
+		row-gap $gap-big
+		column-gap $gap
+		max-height calc(100vh - 500px)
+		overflow-x hidden
+		overflow-y auto
+		custom-scrollbar()
+
+	&__item
+		flex-center()
+		flex-direction column
+
+	&__logo
+		position absolute
+		top $gap-small
+		left $gap-small
+		height 60px
+		width 60px
+		object-fit cover
+		border-radius $border-radius-middle
+		pointer-events none
+
+	&__img
+		height 148px
+		width 100%
+		object-fit contain
+		margin-top $gap
+		filter grayscale(100%)
+		transition filter $transition
+		pointer-events none
+		user-select none
+
+	& .profile__achievement-points
+		margin-top $gap-big
+		margin-bottom $gap
+
+	&__title, &__subtitle
+		text-align center
+
+	&__title
+		font-size 28px
+		font-weight $bold
+		line-height $line-height
+		margin-top $gap-big
+
+	&__subtitle
+		font-size 16px
+		line-height 20px
+		margin-top $gap-small
+
+	&__date
+		font-size 12px
+		margin-top 5px
+		color $color-text-third
+
+	&__buttons
+		flex-center()
+		width 100%
+
+		&-close.ui-button.ant-btn.ant-btn-primary
+			background-color $color-background-third
+			color $color-text
+			box-shadow none
+
+			&:hover, &:active, &:focus
+				background-color $color-background-disabled
+
+		& > .ui-button:not(:first-child)
+			margin-left $gap
+
+	& .ui-input
+		margin-top $gap-big
+		width 280px
+
+		& input
+			height 40px
+
+	& .ui-button
+		margin-top $gap-big
+		width 100%
+		height 60px
+		font-weight $bold
+		font-size 20px
+
+	& .ant-modal-close-x
+		margin-top 7px
+		margin-right -7px
+		color $color-text
+		transition opacity $transition
+
+		&:hover
+			opacity .5
+
+	&._list
+		width 100%
+
+		& .ant-modal-close-x
+			margin-top $gap-big
+			margin-right $gap-big
+
+		& .ui-input
+			width 100%
+
+	&._list .ant-modal-content
+		max-width 700px
+		margin-left auto
+		margin-right auto
+
+	&._list &__container
+		width 100%
+
+	&._list &__item
+		flex-direction row
+		justify-content flex-start
+		align-items flex-start
+		width 260px
+
+	&._list &__img
+		height 80px
+		width 80px
+		margin-top 0
+
+	&._list &__intro
+		align-items flex-start
+		justify-content flex-start
+		margin-left $gap-small
+
+	&._list .profile__achievement-points
+		margin 0
+
+	&._list &__title, &._list &__subtitle
+		margin-top $gap-extra-small
+		text-align left
+
+	&._list &__title
+		font-size 18px
+
+	&._list &__subtitle
+		font-size 14px
+
+	&._minted &__background
+		opacity 1
+
+	&._minted &__img
+		filter none
+
+	&._disabled &__img
+		filter grayscale(100%)
+
+	&:not(._disabled) .profile__achievement-points path
+		fill $color-ui
+
+	&._disabled .profile__achievement-points
+		opacity .7
+
+	&._public &__img
+		filter none

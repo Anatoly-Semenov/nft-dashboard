@@ -1,0 +1,66 @@
+.ui-select
+	&__title
+		font-weight normal
+		font-size 15px
+		line-height 150%
+		color $color-text-inversion
+
+	&._input
+		& .ant-select
+			&-selection
+				border none
+				border-bottom 1px solid $color-text-inversion
+				box-shadow none
+
+	&.ant-select:not(._input)
+		color $color-text-inversion
+		pointer-events none
+
+	& .ant-select
+
+		&-arrow-icon
+			color $color-text-inversion
+
+		&-selection
+			border none
+			box-shadow none
+			background-color transparent
+
+		&__rendered
+			margin-right 34px
+
+	&__option
+		display flex
+		justify-content flex-start
+		align-items center
+		min-width 130px
+		height 30px
+		font-size 14px
+		padding-left 12px
+		line-height 150%
+		color $color-text-inversion
+		border-bottom 1px solid #2D2D2D
+		text-align center
+
+		&:last-child
+			border-bottom none
+
+		&.ant-select-dropdown-menu-item
+			&-active,	&:hover, &-active:hover
+				background-color #0061F2
+				color $color-text-inversion
+
+			&-selected
+				font-weight $regular
+				background-color transparent
+
+	&__dropdown
+		background transparent
+		border 1px solid #2D2D2D
+		border-radius 4px
+		min-width fit-content
+
+		& .ant-select-dropdown-menu
+			background-color #1D1D1D
+			border-radius 4px
+			padding 0

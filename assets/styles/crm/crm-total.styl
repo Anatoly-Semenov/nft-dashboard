@@ -1,0 +1,30 @@
+.crm__total
+	display flex
+	justify-content flex-start
+	align-items center
+	flex-wrap wrap
+	row-gap $gap-small
+	column-gap $gap-small
+	margin-top 30px
+
+	&-item
+		display flex
+		justify-content center
+		align-items center
+		background-color $color-background
+		border-radius $border-radius
+		border $border
+		padding $gap
+
+		& .ui-statistic__title
+			color $color-text-third
+
+		& .ui-button
+			margin-left -40px
+
+	&-scholars._unauthorized
+		background-color $color-text
+
+	&-modal
+		& textarea
+			max-height 450px

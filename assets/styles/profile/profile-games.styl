@@ -1,0 +1,56 @@
+.profile__games
+	display flex
+	flex-direction column
+
+	&-title
+		font-size 28px
+		font-weight $bold
+
+	&-list
+		display flex
+		flex-direction column
+		width 100%
+		margin-top $gap-big
+
+	&-item
+		display flex
+		justify-content space-between
+		align-items flex-start
+		width 100%
+		opacity 1
+
+		&:hover &-description
+			opacity 1
+
+		&:not(:first-child)
+			margin-top $gap
+
+	&-profile
+		display flex
+
+		& .ui-avatar
+			height 40px
+			width 40px
+
+	&-text
+		display flex
+		flex-direction column
+		color $color-text
+		margin-left 12px
+
+	&-name
+		font-size 16px
+		font-weight $bold
+
+	&-description
+		font-size 12px
+		font-weight $regular
+		margin-top $gap-extra-small
+		transition opacity $transition
+		opacity .7
+
+	&._loading .ui-avatar, &._loading &-name, &._loading &-description, &._loading svg
+		loading()
+
+	&._loading &-item
+		pointer-events none

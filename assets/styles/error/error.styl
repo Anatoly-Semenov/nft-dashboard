@@ -1,0 +1,46 @@
+.error
+	min-height 600px
+	height 100%
+	width 100%
+	flex-center()
+
+	&__container
+		flex-center()
+		flex-direction column
+
+	&__description, &__title
+		text-align center
+
+	&__description
+		color $color-text-third
+		font-size 18px
+		margin-bottom 10px
+
+		&._short
+			width 380px
+			margin-top 20px
+			margin-bottom -20px
+
+	&__title
+		color $color-text
+		font-size 60px
+
+	&__button
+		display flex
+		justify-content center
+		align-items center
+		margin-top $gap-small
+
+		& .ui-button
+			border-radius 80px
+			font-size 14px
+			font-weight $bold
+
+	&__socket
+		margin-top $gap-small
+		margin-right $gap-extra-large
+
+	&__fork
+		margin-bottom $gap-small
+		margin-left 36px
+

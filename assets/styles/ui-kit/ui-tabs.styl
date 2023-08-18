@@ -1,0 +1,30 @@
+.ui-tabs
+	& .ant-tabs
+		&-bar
+			margin 0 0 $gap 0
+			border-bottom none
+
+		&-tab
+			color $color-text-third
+			font-size 15px
+			margin 0 3px 0 0
+			padding 12px 14px
+
+			&:hover
+				color $color-ui
+
+			&-active
+				font-weight normal
+				font-size 15px
+				color $color-background
+				z-index 2
+
+			&-active:hover
+				color $color-background
+
+		&-ink-bar
+			z-index 1
+			bottom $gap-small
+			height 30px
+			border-radius $border-radius
+			background-color $color-ui

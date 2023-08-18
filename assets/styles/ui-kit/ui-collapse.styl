@@ -1,0 +1,27 @@
+.ui-collapse
+	width 100%
+	background-color transparent
+	border none
+
+	&.ant-collapse > .ant-collapse-item
+		border-color $color-border
+
+		& > .ant-collapse-header
+			color $color-text
+			font-size 18px
+			padding $gap $gap $gap 50px
+
+	& .ant-collapse
+			&-content
+				background-color transparent
+				border none
+
+				&-box
+					padding 0 0 $gap 0
+
+					& p
+						color $color-text-third
+						font-size 14px
+
+	& .anticon.anticon-caret-right.ant-collapse-arrow
+		font-size 15px

@@ -1,0 +1,38 @@
+.ui-menu-item
+	display flex
+	justify-content flex-start
+	align-items center
+	height 45px
+	padding 0 15px
+	color $color-text
+	border-radius $border-radius
+
+	&:first-child
+		padding-top 0
+
+	&:last-child
+		padding-bottom 0
+		border-bottom none
+
+	& svg
+		margin-right 20px
+
+	& a
+		color $color-text
+		transition unset
+
+	&:hover
+		background-color $color-ui-hover
+		cursor pointer
+
+		&
+			color $color-text-inversion
+
+		& path
+			fill $color-text-inversion
+
+	&:hover > *
+		color $color-text-inversion
+
+	&:active
+		background-color $color-ui-active

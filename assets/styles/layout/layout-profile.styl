@@ -1,0 +1,19 @@
+.layout__profile
+	display flex
+	flex-direction column
+	min-width 390px
+	max-width 390px
+	margin-left 100px
+
+	& > *:not(.profile__connect-list, .profile, .profile__connect, .profile__airdrop)
+		border-radius $border-radius
+		border 1px solid $color-border-hover
+		background-color transparent
+		padding $gap-big $gap-large
+
+		&:not(:first-child)
+			margin-top $gap
+
+	& > div.profile__connect
+		margin-top $gap
+		margin-left 0

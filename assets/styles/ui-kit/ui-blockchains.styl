@@ -1,0 +1,31 @@
+.ui-blockchains
+	flex-center()
+
+	&__item
+		flex-center()
+		height 24px
+		width 24px
+		border-radius $border-radius-circle
+		border 1px solid $color-background-third
+		background-color $color-background-secondary
+		transition transform $transition
+
+		& img
+			width 100%
+			padding 4px
+			pointer-events none
+			user-select none
+
+		&:not(:first-child)
+			margin-left - 5px
+
+		&:hover
+			transform translate(0, -5px)
+
+	&._loading &__item
+		loading()
+		border-radius $border-radius-circle
+		border $border
+
+		& img
+			opacity 0

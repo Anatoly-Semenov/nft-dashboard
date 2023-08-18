@@ -1,0 +1,26 @@
+@media screen and (max-width: 800px)
+	.leaderboard__rewards
+		width 100%
+
+		&-info
+			flex-direction column-reverse
+			justify-content flex-start
+			align-items flex-start
+			width 100%
+			padding $gap $gap-big
+
+		&-intro
+			padding 0
+			margin-top $gap
+
+		&-list
+			flex-direction column
+			justify-content flex-start
+			align-items flex-start
+
+		&-item
+			&:not(:first-child)
+				margin-top $gap-small
+				margin-left 0
+				padding-left 0
+				border none

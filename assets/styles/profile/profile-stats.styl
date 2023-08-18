@@ -1,0 +1,38 @@
+.profile-stats
+	width 100%
+	display flex
+	flex-direction column
+
+	&__totals
+		width 100%
+		display flex
+
+	&__total
+		width 100%
+		display flex
+		justify-content space-between
+		align-items center
+		padding $gap $gap-big
+		border-radius $border-radius-middle
+		background-color $color-background-secondary
+
+		&:not(:last-child)
+			margin-right $gap
+
+		&-title
+			font-size 18px
+			color $color-text-third
+
+		& .ui-delta
+			font-size 16px
+			font-weight $bold
+
+	&._loading .profile__total-title, &._loading .profile__total-value
+		loading()
+
+	&._loading .profile__total-title
+		width 100px
+		height 21px
+
+	&._loading .profile__total-value
+		width 50px

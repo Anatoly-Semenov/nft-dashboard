@@ -1,0 +1,38 @@
+.profile__about
+	display flex
+	flex-direction column
+
+	&-title
+		font-size 20px
+		font-weight $bold
+
+	&-list, &-item
+		display flex
+		flex-direction column
+
+	&-list
+		margin-top $gap-big
+
+	&-item
+		position relative
+		padding-left $gap
+
+		&:not(:first-child)
+			margin-top $gap
+
+	&-dot
+		position absolute
+		left 0
+		top $gap-small
+		height 8px
+		width 8px
+		background-color $color-ui
+
+	&-subtitle
+		font-size 18px
+		font-weight $bold
+
+	&-description
+		font-size 14px
+		color $color-text-third
+		margin-top $gap-extra-small

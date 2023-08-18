@@ -1,0 +1,35 @@
+.game__profile
+	display flex
+
+	&-info
+		display flex
+
+	&-text
+		display flex
+		justify-content center
+		align-items flex-start
+		flex-direction column
+		margin-left $gap
+
+	&-name
+		margin-bottom 4px
+		font-size 28px
+		font-weight $bold
+
+	&-tags
+		display flex
+		align-items center
+		margin-left $gap
+
+		& .ui-tag:not(:first-child)
+			margin-left $gap-small
+
+	&._loading .ui-avatar, &._loading &-name
+		loading()
+
+	&._loading &-name
+		height 32px
+		width 170px
+
+	&._loading .ui-avatar
+		border-radius $border-radius-circle

@@ -1,0 +1,39 @@
+.ui-carousel
+	& .slick-slide
+		text-align center
+		line-height 160px
+		background transparent
+		overflow hidden
+
+	& .slick-track
+		flex-center()
+
+	&__arrow.slick-arrow
+		&.slick-prev, &.slick-next
+			display flex !important
+			justify-content center
+			align-items center
+			width 56px
+			height 56px
+			font-size 25px
+			background-color $color-background-third
+			opacity 1
+			z-index 1
+
+			& i
+				transition color $transition
+
+			&:hover i
+				color $color-ui !important
+
+		&.slick-prev
+			left -70px
+
+		&.slick-next
+			right -70px
+
+	&__arrow:before
+		display none
+
+	&__arrow:hover
+		opacity 0.5

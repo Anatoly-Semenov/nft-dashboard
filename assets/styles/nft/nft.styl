@@ -1,0 +1,39 @@
+.nft
+	display flex
+	flex-direction column
+
+	&__title
+		font-size 42px
+		font-weight $bold
+
+	&__title
+		font-size 20px
+		font-weight $bold
+		color $color-ui
+
+	&__items
+		display flex
+		flex-wrap wrap
+		justify-content center
+		row-gap 50px
+		column-gap $gap-big
+		margin-top 50px
+
+	&__rewards
+		display flex
+		flex-direction column
+		align-items flex-start
+		margin-top 80px
+
+		&-title
+			font-size 24px
+			font-weight $bold
+
+		&-list
+			width 100%
+			display flex
+			flex-wrap wrap
+			justify-content space-between
+			row-gap 50px
+			column-gap $gap-big
+			margin-top $gap

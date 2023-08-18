@@ -1,0 +1,14 @@
+@media screen and (max-width: 1360px)
+	.game__charts
+		&-row
+			flex-direction column
+			max-height fit-content
+
+			& .game__chart
+				margin-left 0
+				width 100%
+				min-width 100%
+				max-width 100%
+
+				&:not(:first-child)
+					margin-top $gap

@@ -1,0 +1,28 @@
+.profile__available
+	display flex
+	flex-direction column
+
+	&-intro
+		display flex
+		justify-content space-between
+		align-items center
+		width 100%
+
+	&-list
+		display flex
+		justify-content flex-start
+		align-items center
+		margin-top $gap
+		width 100%
+		overflow-x auto
+		overflow-y hidden
+		custom-scrollbar()
+
+		& > *:not(:first-child)
+			margin-left $gap
+
+	&._scroll &-list
+		padding-bottom $gap-small
+
+	&._loading &-intro .ui-button
+		loading()
